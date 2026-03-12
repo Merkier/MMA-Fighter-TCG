@@ -1,0 +1,100 @@
+[
+  {
+    "title": "Leo “Titan” Moreno — Starter",
+    "id": "starter_titan",
+    "game": "MMA Fighter Card Game",
+    "format": "Standard",
+    "cardCount": 43,
+    "createdAt": "2026-03-12T00:00:00.000Z",
+    "lastModifiedAt": "2026-03-12T00:00:00.000Z",
+    "deckList": {
+      "categoriesOrder": [
+        "Fighter",
+        "Action deck",
+        "Technique"
+      ],
+      "Fighter": [
+        {
+          "count": 1,
+          "id": "FTR_LEO_TITAN"
+        }
+      ],
+      "Action deck": [
+        {
+          "count": 12,
+          "id": "ACT_ACTION_POINT"
+        }
+      ],
+      "Technique": [
+        { "count": 2, "id": "TECH_ANGLE_STEP" },
+        { "count": 2, "id": "TECH_CLINCH_GRAB" },
+        { "count": 2, "id": "TECH_CROSS_HOOK" },
+        { "count": 1, "id": "TECH_DOUBLE_LEG" },
+        { "count": 2, "id": "TECH_DIRTY_BOXING" },
+        { "count": 1, "id": "TECH_ELBOW_SLICE" },
+        { "count": 1, "id": "TECH_EYE_POKE" },
+        { "count": 1, "id": "TECH_FOOTWORK_ESCAPE" },
+        { "count": 2, "id": "TECH_GROUND_AND_POUND" },
+        { "count": 2, "id": "TECH_GUARD_BLOCK" },
+        { "count": 3, "id": "TECH_JAB" },
+        { "count": 1, "id": "TECH_KNEE_STRIKE" },
+        { "count": 2, "id": "TECH_LOW_KICK" },
+        { "count": 1, "id": "TECH_OVERHAND_RIGHT" },
+        { "count": 2, "id": "TECH_PUMMEL_POSITION" },
+        { "count": 1, "id": "TECH_SLIP_COUNTER" },
+        { "count": 1, "id": "TECH_STAND_UP" },
+        { "count": 1, "id": "TECH_TRIP_TAKEDOWN" }
+      ]
+    }
+  },
+  {
+    "title": "Viktor “Grim” Dragunov — Starter",
+    "id": "starter_grim",
+    "game": "MMA Fighter Card Game",
+    "format": "Standard",
+    "cardCount": 43,
+    "createdAt": "2026-03-12T00:00:00.000Z",
+    "lastModifiedAt": "2026-03-12T00:00:00.000Z",
+    "deckList": {
+      "categoriesOrder": [
+        "Fighter",
+        "Action deck",
+        "Technique"
+      ],
+      "Fighter": [
+        {
+          "count": 1,
+          "id": "FTR_VIKTOR_GRIM"
+        }
+      ],
+      "Action deck": [
+        {
+          "count": 12,
+          "id": "ACT_ACTION_POINT"
+        }
+      ],
+      "Technique": [
+        { "count": 1, "id": "TECH_BODY_LOCK_SLAM" },
+        { "count": 1, "id": "TECH_BREAK_CLINCH" },
+        { "count": 2, "id": "TECH_CAGE_PRESSURE" },
+        { "count": 1, "id": "TECH_CAGE_TURN" },
+        { "count": 2, "id": "TECH_CLINCH_GRAB" },
+        { "count": 2, "id": "TECH_DIRTY_BOXING" },
+        { "count": 1, "id": "TECH_DOUBLE_LEG" },
+        { "count": 2, "id": "TECH_ELBOW_SLICE" },
+        { "count": 2, "id": "TECH_FRAME_DEFENCE" },
+        { "count": 2, "id": "TECH_GROUND_AND_POUND" },
+        { "count": 1, "id": "TECH_HEADBUTT" },
+        { "count": 2, "id": "TECH_KNEE_STRIKE" },
+        { "count": 1, "id": "TECH_OVERHAND_RIGHT" },
+        { "count": 2, "id": "TECH_PUMMEL_POSITION" },
+        { "count": 1, "id": "TECH_PASS_GUARD" },
+        { "count": 2, "id": "TECH_MAT_RETURN" },
+        { "count": 1, "id": "TECH_SPRAWL" },
+        { "count": 1, "id": "TECH_STAND_UP" },
+        { "count": 2, "id": "TECH_TRIP_TAKEDOWN" },
+        { "count": 1, "id": "TECH_UNDERHOOK_CONTROL" }
+      ]
+    }
+  }
+]

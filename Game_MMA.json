@@ -1,0 +1,211 @@
+{
+  "name": "MMA Fighter Card Game",
+  "menuBackgroundImage": "https://REPLACE_ME.github.io/MMA-Fighter-TCG/Images/menu-bg.jpg",
+  "deckBuilding": {
+    "mainFilters": [
+      "type",
+      "category",
+      "range",
+      "timing",
+      "actionCost",
+      "staminaCost",
+      "tags"
+    ],
+    "formats": [
+      {
+        "title": "Standard",
+        "gameplay": "Classic",
+        "customCategories": [
+          "Fighter",
+          "Action deck"
+        ]
+      }
+    ]
+  },
+  "gameplay": {
+    "Classic": {
+      "mulligan": {
+        "info": "Optional mulligan: once only. Draw a new hand of 5, then keep.",
+        "startingHandSize": 5,
+        "drawNewHand": true
+      },
+      "newTurn": {
+        "drawOnStart": false,
+        "sharedTurn": true,
+        "firstPlayerTokenName": "Priority",
+        "drawPerTurn": 0
+      },
+      "defaultNotes": "Stamina counter = your current Stamina (start 30).\nWhenever you gain PRIORITY:\n• Restore ceil(10% of current Stamina)\n• Draw 1 Technique card\n• Move up to 3 Action cards from Action Deck → Action Pool\n\nAction Pool: spend Action cards to pay Action costs. Spent Action cards go to the bottom of your Action Deck.\nAll triggers/effects are handled manually by players.",
+      "tokens": [
+        {
+          "name": "Priority",
+          "image": "https://REPLACE_ME.github.io/MMA-Fighter-TCG/Images/tokens/priority.png",
+          "isUnique": true,
+          "leavesAtEndOfTurn": false
+        }
+      ],
+      "countersStartingValues": [
+        30
+      ],
+      "draggableTokens": [
+        {
+          "id": "Range_Stand",
+          "name": "Range: Stand",
+          "image": "https://REPLACE_ME.github.io/MMA-Fighter-TCG/Images/tokens/range-stand.png"
+        },
+        {
+          "id": "Range_Clinch",
+          "name": "Range: Clinch",
+          "image": "https://REPLACE_ME.github.io/MMA-Fighter-TCG/Images/tokens/range-clinch.png"
+        },
+        {
+          "id": "Range_Ground",
+          "name": "Range: Ground",
+          "image": "https://REPLACE_ME.github.io/MMA-Fighter-TCG/Images/tokens/range-ground.png"
+        },
+        {
+          "id": "Debuff_Blurred",
+          "name": "Blurred Vision",
+          "image": "https://REPLACE_ME.github.io/MMA-Fighter-TCG/Images/tokens/debuff-blurred.png"
+        },
+        {
+          "id": "Debuff_Limp",
+          "name": "Limp",
+          "image": "https://REPLACE_ME.github.io/MMA-Fighter-TCG/Images/tokens/debuff-limp.png"
+        },
+        {
+          "id": "Debuff_CutBrow",
+          "name": "Cut Brow",
+          "image": "https://REPLACE_ME.github.io/MMA-Fighter-TCG/Images/tokens/debuff-cutbrow.png"
+        },
+        {
+          "id": "Debuff_GripDamage",
+          "name": "Grip Damage",
+          "image": "https://REPLACE_ME.github.io/MMA-Fighter-TCG/Images/tokens/debuff-grip.png"
+        },
+        {
+          "id": "Debuff_Pinned",
+          "name": "Pinned",
+          "image": "https://REPLACE_ME.github.io/MMA-Fighter-TCG/Images/tokens/debuff-pinned.png"
+        },
+        {
+          "id": "Debuff_Choked",
+          "name": "Choked",
+          "image": "https://REPLACE_ME.github.io/MMA-Fighter-TCG/Images/tokens/debuff-choked.png"
+        }
+      ],
+      "sections": {
+        "customSections": [
+          "Fighter",
+          "Action_Pool",
+          "Action_Deck"
+        ],
+        "layout": {
+          "direction": "row",
+          "isSymetricalForOpponents": true,
+          "content": [
+            {
+              "direction": "column",
+              "style": {
+                "width": "18vh"
+              },
+              "content": [
+                {
+                  "section": "Fighter"
+                }
+              ]
+            },
+            {
+              "direction": "column",
+              "style": {
+                "width": "28vh"
+              },
+              "content": [
+                {
+                  "section": "Action_Pool"
+                },
+                {
+                  "section": "Action_Deck"
+                }
+              ]
+            }
+          ]
+        },
+        "categoriesAlreadyOnBoard": [
+          "Fighter",
+          "Action deck->Action_Deck"
+        ],
+        "autoPlayFromHand": {
+          "Technique": "Stack",
+          "Fighter": "Fighter",
+          "Action": "Action_Pool"
+        },
+        "autoPlayFromStack": {
+          "Technique": "Discard"
+        },
+        "sectionsDict": {
+          "Stack": {
+            "isDefaultSection": true,
+            "title": "Exchange",
+            "isHidden": "no",
+            "height": "HUGE",
+            "alignment": "NONE",
+            "isHorizontalAllowed": false,
+            "isGroupForbidden": true,
+            "displayedTitle": "Exchange"
+          },
+          "Fighter": {
+            "title": "Fighter",
+            "isHidden": "no",
+            "height": "DEFAULT",
+            "alignment": "CENTER",
+            "isHorizontalAllowed": true,
+            "noQuickActions": true,
+            "displayedTitle": "Fighter"
+          },
+          "Action_Pool": {
+            "title": "Action_Pool",
+            "isHidden": "no",
+            "height": "SMALL",
+            "alignment": "START",
+            "opponentAlignment": "END",
+            "isHorizontalAllowed": true,
+            "displayedTitle": "Action Pool",
+            "noQuickActions": false,
+            "cardActionShortcut": {
+              "action": "MOVE",
+              "actionData": {
+                "destination": "Action_Deck"
+              },
+              "image": "https://REPLACE_ME.github.io/MMA-Fighter-TCG/Images/icons/spend-action.png"
+            }
+          },
+          "Action_Deck": {
+            "title": "Action_Deck",
+            "isHidden": "yes",
+            "height": "SMALL",
+            "alignment": "DECK",
+            "isHorizontalAllowed": false,
+            "displayedTitle": "Action Deck"
+          }
+        }
+      }
+    }
+  },
+  "defaultRessources": {
+    "backgrounds": [
+      "https://REPLACE_ME.github.io/MMA-Fighter-TCG/Images/playmats/arena-mat.jpg"
+    ],
+    "decksUrl": "https://REPLACE_ME.github.io/MMA-Fighter-TCG/MMADecks.json"
+  },
+  "customHelp": "Manual-play MMA card game.\n\nPRIORITY FLOW (no automation):\n• When you gain PRIORITY: restore ceil(10% of current Stamina), draw 1 Technique, then move up to 3 Action cards from Action Deck → Action Pool.\n• Actions: spend Action cards from Action Pool to pay Action costs; move them into Action Deck (recycle).\n• Range: use draggable tokens (Stand/Clinch/Ground) to track the current range.\n• Debuffs: use draggable tokens (Blurred, Limp, Cut Brow, Grip Damage, Pinned, Choked).\n\nHOW TO PLAY A CARD:\n1) Click a Technique in hand to move it to the Exchange (Stack).\n2) Opponent responds by playing a Response (or passing).\n3) Resolve manually, then click Technique cards in the Exchange to send them to Discard.\n\nTIP: The Action Pool section has a quick shortcut icon that moves a selected Action card to Action Deck (spend).",
+  "cards": {
+    "dataUrl": "https://REPLACE_ME.github.io/MMA-Fighter-TCG/MMACards.json",
+    "cardBack": "https://REPLACE_ME.github.io/MMA-Fighter-TCG/Images/card-backs/technique-back.jpg",
+    "cardBackColor": "#202020",
+    "extraCardBacks": {
+      "Fighter": "https://REPLACE_ME.github.io/MMA-Fighter-TCG/Images/card-backs/fighter-back.jpg",
+      "Action": "https://REPLACE_ME.github.io/MMA-Fighter-TCG/Images/card-backs/action-back.jpg"
+    }
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "ACT_ACTION_POINT": {
+    "id": "ACT_ACTION_POINT",
+    "name": "Action",
+    "type": "Action",
+    "face": {
+      "front": {
+        "name": "Action",
+        "type": "Action",
+        "cost": 0,
+        "image": "https://REPLACE_ME.github.io/MMA-Fighter-TCG/Images/cards/placeholder-action.jpg",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "isHorizontal": false,
+    "category": "Resource",
+    "rulesText": "Represents 1 Action. Spend Action cards to pay Action costs; move spent Action cards to your Action Deck (recycle)."
+  },
+  "FTR_LEO_TITAN": {
+    "id": "FTR_LEO_TITAN",
+    "name": "Leo “Titan” Moreno",
+    "type": "Fighter",
+    "face": {
+      "front": {
+        "name": "Leo “Titan” Moreno",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://REPLACE_ME.github.io/MMA-Fighter-TCG/Images/cards/placeholder-fighter.jpg",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "isHorizontal": false,
+    "category": "Fighter",
+    "startingStamina": 30,
+    "striking": 4,
+    "clinch": 2,
+    "grappling": 2,
+    "alignment": "Light/Clean",
+    "role": "Power Striker",
+    "rulesText": "Fighter values reduce Base Stamina cost of cards in that category (minimum 1).\nStriking 4 / Clinch 2 / Grappling 2."
+  },
+  "FTR_VIKTOR_GRIM": {
+    "id": "FTR_VIKTOR_GRIM",
+    "name": "Viktor “Grim” Dragunov",
+    "type": "Fighter",
+    "face": {
+      "front": {
+        "name": "Viktor “Grim” Dragunov",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://REPLACE_ME.github.io/MMA-Fighter-TCG/Images/cards/placeholder-fighter.jpg",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "isHorizontal": false,
+    "category": "Fighter",
+    "startingStamina": 30,
+    "striking": 2,
+    "clinch": 4,
+    "grappling": 2,
+    "alignment": "Dark/Dirty",
+    "role": "Ruthless Brawler",
+    "rulesText": "Fighter values reduce Base Stamina cost of cards in that category (minimum 1).\nStriking 2 / Clinch 4 / Grappling 2."
+  },
+  "FTR_MAYA_LOTUS": {
+    "id": "FTR_MAYA_LOTUS",
+    "name": "Maya “Swift Lotus” Chen",
+    "type": "Fighter",
+    "face": {
+      "front": {
+        "name": "Maya “Swift Lotus” Chen",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://REPLACE_ME.github.io/MMA-Fighter-TCG/Images/cards/placeholder-fighter.jpg",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "isHorizontal": false,
+    "category": "Fighter",
+    "startingStamina": 30,
+    "striking": 3,
+    "clinch": 1,
+    "grappling": 3,
+    "alignment": "Light/Clean",
+    "role": "Speed Technician",
+    "rulesText": "Fighter values reduce Base Stamina cost of cards in that category (minimum 1).\nStriking 3 / Clinch 1 / Grappling 3."
+  },
+  "FTR_AVA_NIGHTSHADE": {
+    "id": "FTR_AVA_NIGHTSHADE",
+    "name": "Ava “Nightshade” Kessler",
+    "type": "Fighter",
+    "face": {
+      "front": {
+        "name": "Ava “Nightshade” Kessler",
+        "type": "Fighter",
+        "cost": 0,
+        "image": "https://REPLACE_ME.github.io/MMA-Fighter-TCG/Images/cards/placeholder-fighter.jpg",
+        "isHorizontal": false
+      }
+    },
+    "cost": 0,
+    "isHorizontal": false,
+    "category": "Fighter",
+    "startingStamina": 30,
+    "striking": 1,
+    "clinch": 2,
+    "grappling": 4,
+    "alignment": "Dark/Dirty",
+    "role": "Tactical Opportunist",
+    "rulesText": "Fighter values reduce Base Stamina cost of cards in that category (minimum 1).\nStriking 1 / Clinch 2 / Grappling 4."
+  },
+  "TECH_JAB": {
+    "id": "TECH_JAB",
+    "name": "Jab",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Jab",
+        "type": "Technique",
+        "cost": 3,
+        "image": "https://REPLACE_ME.github.io/MMA-Fighter-TCG/Images/cards/placeholder-technique.jpg",
+        "isHorizontal": false
+      }
+    },
+    "cost": 3,
+    "isHorizontal": false,
+    "category": "Striking",
+    "range": "Stand",
+    "timing": "Main",
+    "actionCost": 1,
+    "staminaCost": 3,
+    "tags": [],
+    "rulesText": "Deal 2 damage. If you play a COMBO card in the same exchange, your next Striking card this exchange costs −1 Action."
+  },
+  "TECH_CROSS_HOOK": {
+    "id": "TECH_CROSS_HOOK",
+    "name": "Cross Hook",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Cross Hook",
+        "type": "Technique",
+        "cost": 5,
+        "image": "https://REPLACE_ME.github.io/MMA-Fighter-TCG/Images/cards/placeholder-technique.jpg",
+        "isHorizontal": false
+      }
+    },
+    "cost": 5,
+    "isHorizontal": false,
+    "category": "Striking",
+    "range": "Stand",
+    "timing": "Main",
+    "actionCost": 2,
+    "staminaCost": 5,
+    "tags": [],
+    "rulesText": "Deal 4 damage. If the attacking sequence includes Jab, deal +1 damage."
+  },
+  "TECH_LOW_KICK": {
+    "id": "TECH_LOW_KICK",
+    "name": "Low Kick",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Low Kick",
+        "type": "Technique",
+        "cost": 4,
+        "image": "https://REPLACE_ME.github.io/MMA-Fighter-TCG/Images/cards/placeholder-technique.jpg",
+        "isHorizontal": false
+      }
+    },
+    "cost": 4,
+    "isHorizontal": false,
+    "category": "Striking",
+    "range": "Stand",
+    "timing": "Main",
+    "actionCost": 2,
+    "staminaCost": 4,
+    "tags": [],
+    "rulesText": "Deal 2 damage and apply LIMP until the target Passes. LIMP: the target’s Range Change cards cost +1 Base Stamina."
+  },
+  "TECH_OVERHAND_RIGHT": {
+    "id": "TECH_OVERHAND_RIGHT",
+    "name": "Overhand Right",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Overhand Right",
+        "type": "Technique",
+        "cost": 6,
+        "image": "https://REPLACE_ME.github.io/MMA-Fighter-TCG/Images/cards/placeholder-technique.jpg",
+        "isHorizontal": false
+      }
+    },
+    "cost": 6,
+    "isHorizontal": false,
+    "category": "Striking",
+    "range": "Stand",
+    "timing": "Main",
+    "actionCost": 3,
+    "staminaCost": 6,
+    "tags": [],
+    "rulesText": "Deal 6 damage. If a Response reduces this attack to 0 damage, you lose 1 additional Stamina (over-commitment)."
+  },
+  "TECH_ANGLE_STEP": {
+    "id": "TECH_ANGLE_STEP",
+    "name": "Angle Step",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Angle Step",
+        "type": "Technique",
+        "cost": 3,
+        "image": "https://REPLACE_ME.github.io/MMA-Fighter-TCG/Images/cards/placeholder-technique.jpg",
+        "isHorizontal": false
+      }
+    },
+    "cost": 3,
+    "isHorizontal": false,
+    "category": "Striking",
+    "range": "Stand",
+    "timing": "Main",
+    "actionCost": 1,
+    "staminaCost": 3,
+    "tags": [
+      "COMBO"
+    ],
+    "rulesText": "COMBO. If paired with a Stand Striking card this exchange, that card deals +1 damage and cannot be reduced below 1."
+  },
+
+  "...": "SNIP — the rest of the Techniques are included in the next file section you’ll paste in as-is"
+}
