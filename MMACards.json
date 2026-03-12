@@ -17,6 +17,7 @@
     "category": "Resource",
     "rulesText": "Represents 1 Action. Spend Action cards to pay Action costs; move spent Action cards to your Action Deck (recycle)."
   },
+
   "FTR_LEO_TITAN": {
     "id": "FTR_LEO_TITAN",
     "name": "Leo “Titan” Moreno",
@@ -39,7 +40,7 @@
     "grappling": 2,
     "alignment": "Light/Clean",
     "role": "Power Striker",
-    "rulesText": "Fighter values reduce Base Stamina cost of cards in that category (minimum 1).\nStriking 4 / Clinch 2 / Grappling 2."
+    "rulesText": "Fighter values reduce Base Stamina cost of cards in that category (minimum 1).\\nStriking 4 / Clinch 2 / Grappling 2."
   },
   "FTR_VIKTOR_GRIM": {
     "id": "FTR_VIKTOR_GRIM",
@@ -63,7 +64,7 @@
     "grappling": 2,
     "alignment": "Dark/Dirty",
     "role": "Ruthless Brawler",
-    "rulesText": "Fighter values reduce Base Stamina cost of cards in that category (minimum 1).\nStriking 2 / Clinch 4 / Grappling 2."
+    "rulesText": "Fighter values reduce Base Stamina cost of cards in that category (minimum 1).\\nStriking 2 / Clinch 4 / Grappling 2."
   },
   "FTR_MAYA_LOTUS": {
     "id": "FTR_MAYA_LOTUS",
@@ -87,7 +88,7 @@
     "grappling": 3,
     "alignment": "Light/Clean",
     "role": "Speed Technician",
-    "rulesText": "Fighter values reduce Base Stamina cost of cards in that category (minimum 1).\nStriking 3 / Clinch 1 / Grappling 3."
+    "rulesText": "Fighter values reduce Base Stamina cost of cards in that category (minimum 1).\\nStriking 3 / Clinch 1 / Grappling 3."
   },
   "FTR_AVA_NIGHTSHADE": {
     "id": "FTR_AVA_NIGHTSHADE",
@@ -111,8 +112,9 @@
     "grappling": 4,
     "alignment": "Dark/Dirty",
     "role": "Tactical Opportunist",
-    "rulesText": "Fighter values reduce Base Stamina cost of cards in that category (minimum 1).\nStriking 1 / Clinch 2 / Grappling 4."
+    "rulesText": "Fighter values reduce Base Stamina cost of cards in that category (minimum 1).\\nStriking 1 / Clinch 2 / Grappling 4."
   },
+
   "TECH_JAB": {
     "id": "TECH_JAB",
     "name": "Jab",
@@ -225,11 +227,722 @@
     "timing": "Main",
     "actionCost": 1,
     "staminaCost": 3,
-    "tags": [
-      "COMBO"
-    ],
+    "tags": ["COMBO"],
     "rulesText": "COMBO. If paired with a Stand Striking card this exchange, that card deals +1 damage and cannot be reduced below 1."
   },
+  "TECH_GUARD_BLOCK": {
+    "id": "TECH_GUARD_BLOCK",
+    "name": "Guard Block",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Guard Block",
+        "type": "Technique",
+        "cost": 3,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/05-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 3,
+    "isHorizontal": false,
+    "category": "Striking",
+    "range": "Stand",
+    "timing": "Response",
+    "actionCost": 1,
+    "staminaCost": 3,
+    "tags": ["RESPONSE"],
+    "rulesText": "Response to a Stand Striking card. Reduce that card’s damage by 3."
+  },
+  "TECH_SLIP_COUNTER": {
+    "id": "TECH_SLIP_COUNTER",
+    "name": "Slip Counter",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Slip Counter",
+        "type": "Technique",
+        "cost": 4,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/06-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 4,
+    "isHorizontal": false,
+    "category": "Striking",
+    "range": "Stand",
+    "timing": "Response",
+    "actionCost": 2,
+    "staminaCost": 4,
+    "tags": ["RESPONSE"],
+    "rulesText": "Response to a Stand Striking card. Reduce that card’s damage by 2, then deal 2 damage to the attacker."
+  },
+  "TECH_SPRAWL": {
+    "id": "TECH_SPRAWL",
+    "name": "Sprawl",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Sprawl",
+        "type": "Technique",
+        "cost": 4,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/07-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 4,
+    "isHorizontal": false,
+    "category": "Striking",
+    "range": "Stand",
+    "timing": "Response",
+    "actionCost": 2,
+    "staminaCost": 4,
+    "tags": ["RESPONSE"],
+    "rulesText": "Response to a card that would move the fight from Stand to Ground. Cancel that range change. The attacker loses 2 Stamina."
+  },
+  "TECH_FOOTWORK_ESCAPE": {
+    "id": "TECH_FOOTWORK_ESCAPE",
+    "name": "Footwork Escape",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Footwork Escape",
+        "type": "Technique",
+        "cost": 3,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/08-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 3,
+    "isHorizontal": false,
+    "category": "Striking",
+    "range": "Stand",
+    "timing": "Response",
+    "actionCost": 1,
+    "staminaCost": 3,
+    "tags": ["RESPONSE"],
+    "rulesText": "Response to a card that would move the fight from Stand to Clinch. Cancel that range change. Gain Priority after this exchange resolves."
+  },
+  "TECH_FLYING_KNEE": {
+    "id": "TECH_FLYING_KNEE",
+    "name": "Flying Knee",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Flying Knee",
+        "type": "Technique",
+        "cost": 6,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/09-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 6,
+    "isHorizontal": false,
+    "category": "Striking",
+    "range": "Stand",
+    "timing": "Main",
+    "actionCost": 3,
+    "staminaCost": 6,
+    "tags": [],
+    "rulesText": "Deal 5 damage. If the target played a Clinch card in the previous exchange, deal +2 damage."
+  },
+  "TECH_EYE_POKE": {
+    "id": "TECH_EYE_POKE",
+    "name": "Eye Poke",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Eye Poke",
+        "type": "Technique",
+        "cost": 7,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/10-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 7,
+    "isHorizontal": false,
+    "category": "Striking",
+    "range": "Stand",
+    "timing": "Main",
+    "actionCost": 3,
+    "staminaCost": 7,
+    "tags": ["DIRTY"],
+    "rulesText": "DIRTY. Deal 2 damage and apply BLURRED until the target Passes. BLURRED: the target’s first Response each exchange costs +1 Action."
+  },
+  "TECH_HOOK_TO_CLINCH": {
+    "id": "TECH_HOOK_TO_CLINCH",
+    "name": "Hook to Clinch",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Hook to Clinch",
+        "type": "Technique",
+        "cost": 5,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/11-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 5,
+    "isHorizontal": false,
+    "category": "Striking",
+    "range": "Stand",
+    "timing": "Main",
+    "actionCost": 2,
+    "staminaCost": 5,
+    "tags": ["RANGE"],
+    "rulesText": "Deal 2 damage, then move the fight from Stand to Clinch."
+  },
 
-  "...": "SNIP — the rest of the Techniques are included in the next file section you’ll paste in as-is"
+  "TECH_CLINCH_GRAB": {
+    "id": "TECH_CLINCH_GRAB",
+    "name": "Clinch Grab",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Clinch Grab",
+        "type": "Technique",
+        "cost": 4,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/12-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 4,
+    "isHorizontal": false,
+    "category": "Clinch",
+    "range": "Stand",
+    "timing": "Main/Response",
+    "actionCost": 2,
+    "staminaCost": 4,
+    "tags": ["RANGE"],
+    "rulesText": "Move the fight from Stand to Clinch. If played as a Response to a Stand Striking card, reduce that card’s damage by 1."
+  },
+  "TECH_DIRTY_BOXING": {
+    "id": "TECH_DIRTY_BOXING",
+    "name": "Dirty Boxing",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Dirty Boxing",
+        "type": "Technique",
+        "cost": 4,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/13-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 4,
+    "isHorizontal": false,
+    "category": "Clinch",
+    "range": "Clinch",
+    "timing": "Main",
+    "actionCost": 2,
+    "staminaCost": 4,
+    "tags": [],
+    "rulesText": "Deal 3 damage."
+  },
+  "TECH_KNEE_STRIKE": {
+    "id": "TECH_KNEE_STRIKE",
+    "name": "Knee Strike",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Knee Strike",
+        "type": "Technique",
+        "cost": 5,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/14-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 5,
+    "isHorizontal": false,
+    "category": "Clinch",
+    "range": "Clinch",
+    "timing": "Main",
+    "actionCost": 2,
+    "staminaCost": 5,
+    "tags": [],
+    "rulesText": "Deal 4 damage. If another Clinch card was played by you this exchange, deal +1 damage."
+  },
+  "TECH_CAGE_PRESSURE": {
+    "id": "TECH_CAGE_PRESSURE",
+    "name": "Cage Pressure",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Cage Pressure",
+        "type": "Technique",
+        "cost": 4,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/15-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 4,
+    "isHorizontal": false,
+    "category": "Clinch",
+    "range": "Clinch",
+    "timing": "Main",
+    "actionCost": 2,
+    "staminaCost": 4,
+    "tags": [],
+    "rulesText": "Deal 2 damage. Until the target Passes, their cards that would move the fight out of Clinch cost +1 Base Stamina."
+  },
+  "TECH_TRIP_TAKEDOWN": {
+    "id": "TECH_TRIP_TAKEDOWN",
+    "name": "Trip Takedown",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Trip Takedown",
+        "type": "Technique",
+        "cost": 5,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/16-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 5,
+    "isHorizontal": false,
+    "category": "Clinch",
+    "range": "Clinch",
+    "timing": "Main",
+    "actionCost": 2,
+    "staminaCost": 5,
+    "tags": ["RANGE"],
+    "rulesText": "Deal 1 damage, then move the fight from Clinch to Ground."
+  },
+  "TECH_BREAK_CLINCH": {
+    "id": "TECH_BREAK_CLINCH",
+    "name": "Break Clinch",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Break Clinch",
+        "type": "Technique",
+        "cost": 3,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/17-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 3,
+    "isHorizontal": false,
+    "category": "Clinch",
+    "range": "Clinch",
+    "timing": "Main",
+    "actionCost": 1,
+    "staminaCost": 3,
+    "tags": ["RANGE"],
+    "rulesText": "Move the fight from Clinch to Stand. Draw 1 card when this resolves."
+  },
+  "TECH_FRAME_DEFENCE": {
+    "id": "TECH_FRAME_DEFENCE",
+    "name": "Frame Defence",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Frame Defence",
+        "type": "Technique",
+        "cost": 3,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/18-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 3,
+    "isHorizontal": false,
+    "category": "Clinch",
+    "range": "Clinch",
+    "timing": "Response",
+    "actionCost": 1,
+    "staminaCost": 3,
+    "tags": ["RESPONSE"],
+    "rulesText": "Response to a Clinch card. Reduce that card’s damage by 3."
+  },
+  "TECH_UNDERHOOK_CONTROL": {
+    "id": "TECH_UNDERHOOK_CONTROL",
+    "name": "Underhook Control",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Underhook Control",
+        "type": "Technique",
+        "cost": 4,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/19-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 4,
+    "isHorizontal": false,
+    "category": "Clinch",
+    "range": "Clinch",
+    "timing": "Response",
+    "actionCost": 2,
+    "staminaCost": 4,
+    "tags": ["RESPONSE"],
+    "rulesText": "Response to a card that would move the fight from Clinch to Ground. Cancel that range change. Stay in Clinch."
+  },
+  "TECH_CAGE_TURN": {
+    "id": "TECH_CAGE_TURN",
+    "name": "Cage Turn",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Cage Turn",
+        "type": "Technique",
+        "cost": 4,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/20-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 4,
+    "isHorizontal": false,
+    "category": "Clinch",
+    "range": "Clinch",
+    "timing": "Response",
+    "actionCost": 2,
+    "staminaCost": 4,
+    "tags": ["RESPONSE"],
+    "rulesText": "Response to a Clinch card. Cancel that card’s text. Gain Priority after this exchange resolves."
+  },
+  "TECH_PUMMEL_POSITION": {
+    "id": "TECH_PUMMEL_POSITION",
+    "name": "Pummel Position",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Pummel Position",
+        "type": "Technique",
+        "cost": 3,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/21-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 3,
+    "isHorizontal": false,
+    "category": "Clinch",
+    "range": "Clinch",
+    "timing": "Main",
+    "actionCost": 1,
+    "staminaCost": 3,
+    "tags": ["COMBO"],
+    "rulesText": "COMBO. If paired with another Clinch card this exchange, that card gets +2 damage or −1 Action (your choice)."
+  },
+  "TECH_ELBOW_SLICE": {
+    "id": "TECH_ELBOW_SLICE",
+    "name": "Elbow Slice",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Elbow Slice",
+        "type": "Technique",
+        "cost": 7,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/22-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 7,
+    "isHorizontal": false,
+    "category": "Clinch",
+    "range": "Clinch",
+    "timing": "Main",
+    "actionCost": 3,
+    "staminaCost": 7,
+    "tags": ["DIRTY"],
+    "rulesText": "DIRTY. Deal 3 damage and apply CUT BROW until the target Passes. CUT BROW: the target’s first card each exchange costs +1 Base Stamina."
+  },
+  "TECH_BODY_LOCK_SLAM": {
+    "id": "TECH_BODY_LOCK_SLAM",
+    "name": "Body Lock Slam",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Body Lock Slam",
+        "type": "Technique",
+        "cost": 6,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/23-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 6,
+    "isHorizontal": false,
+    "category": "Clinch",
+    "range": "Clinch",
+    "timing": "Main",
+    "actionCost": 3,
+    "staminaCost": 6,
+    "tags": [],
+    "rulesText": "Deal 5 damage. If the fight changes to Ground later this exchange, deal +1 damage."
+  },
+
+  "TECH_DOUBLE_LEG": {
+    "id": "TECH_DOUBLE_LEG",
+    "name": "Double Leg Takedown",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Double Leg Takedown",
+        "type": "Technique",
+        "cost": 5,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/24-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 5,
+    "isHorizontal": false,
+    "category": "Grappling",
+    "range": "Stand",
+    "timing": "Main/Response",
+    "actionCost": 2,
+    "staminaCost": 5,
+    "tags": ["RANGE"],
+    "rulesText": "Move the fight from Stand to Ground. If played as a Response to a Stand Striking card, reduce that card’s damage by 1."
+  },
+  "TECH_GROUND_AND_POUND": {
+    "id": "TECH_GROUND_AND_POUND",
+    "name": "Ground and Pound",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Ground and Pound",
+        "type": "Technique",
+        "cost": 5,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/25-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 5,
+    "isHorizontal": false,
+    "category": "Grappling",
+    "range": "Ground",
+    "timing": "Main",
+    "actionCost": 3,
+    "staminaCost": 5,
+    "tags": [],
+    "rulesText": "Deal 5 damage."
+  },
+  "TECH_GUARD_RECOVERY": {
+    "id": "TECH_GUARD_RECOVERY",
+    "name": "Guard Recovery",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Guard Recovery",
+        "type": "Technique",
+        "cost": 3,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/26-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 3,
+    "isHorizontal": false,
+    "category": "Grappling",
+    "range": "Ground",
+    "timing": "Response",
+    "actionCost": 1,
+    "staminaCost": 3,
+    "tags": ["RESPONSE"],
+    "rulesText": "Response to a Ground card. Reduce that card’s damage by 3."
+  },
+  "TECH_ARMBAR_ATTEMPT": {
+    "id": "TECH_ARMBAR_ATTEMPT",
+    "name": "Armbar Attempt",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Armbar Attempt",
+        "type": "Technique",
+        "cost": 6,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/27-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 6,
+    "isHorizontal": false,
+    "category": "Grappling",
+    "range": "Ground",
+    "timing": "Main",
+    "actionCost": 3,
+    "staminaCost": 6,
+    "tags": [],
+    "rulesText": "Deal 4 damage. If the target has 10 or less Stamina, deal +2 damage."
+  },
+  "TECH_REAR_NAKED_CHOKE": {
+    "id": "TECH_REAR_NAKED_CHOKE",
+    "name": "Rear Naked Choke",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Rear Naked Choke",
+        "type": "Technique",
+        "cost": 7,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/28-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 7,
+    "isHorizontal": false,
+    "category": "Grappling",
+    "range": "Ground",
+    "timing": "Main",
+    "actionCost": 4,
+    "staminaCost": 7,
+    "tags": [],
+    "rulesText": "Deal 5 damage and apply CHOKED until the target Passes. CHOKED: the target restores 5% of current Stamina instead of 10% when they gain Priority."
+  },
+  "TECH_STAND_UP": {
+    "id": "TECH_STAND_UP",
+    "name": "Stand Up",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Stand Up",
+        "type": "Technique",
+        "cost": 4,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/29-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 4,
+    "isHorizontal": false,
+    "category": "Grappling",
+    "range": "Ground",
+    "timing": "Main",
+    "actionCost": 2,
+    "staminaCost": 4,
+    "tags": ["RANGE"],
+    "rulesText": "Move the fight from Ground to Stand."
+  },
+  "TECH_PASS_GUARD": {
+    "id": "TECH_PASS_GUARD",
+    "name": "Pass Guard",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Pass Guard",
+        "type": "Technique",
+        "cost": 4,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/30-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 4,
+    "isHorizontal": false,
+    "category": "Grappling",
+    "range": "Ground",
+    "timing": "Main",
+    "actionCost": 2,
+    "staminaCost": 4,
+    "tags": ["COMBO"],
+    "rulesText": "COMBO. If paired with another Ground card this exchange, that card deals +2 damage."
+  },
+  "TECH_MAT_RETURN": {
+    "id": "TECH_MAT_RETURN",
+    "name": "Mat Return",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Mat Return",
+        "type": "Technique",
+        "cost": 5,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/31-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 5,
+    "isHorizontal": false,
+    "category": "Grappling",
+    "range": "Ground",
+    "timing": "Response",
+    "actionCost": 2,
+    "staminaCost": 5,
+    "tags": ["RESPONSE"],
+    "rulesText": "Response to Stand Up. Cancel that range change and deal 2 damage."
+  },
+  "TECH_HIP_ESCAPE": {
+    "id": "TECH_HIP_ESCAPE",
+    "name": "Hip Escape",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Hip Escape",
+        "type": "Technique",
+        "cost": 3,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/32-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 3,
+    "isHorizontal": false,
+    "category": "Grappling",
+    "range": "Ground",
+    "timing": "Main",
+    "actionCost": 1,
+    "staminaCost": 3,
+    "tags": ["RANGE"],
+    "rulesText": "Move the fight from Ground to Clinch. Draw 1 card when this resolves."
+  },
+  "TECH_SUBMISSION_DEFENCE": {
+    "id": "TECH_SUBMISSION_DEFENCE",
+    "name": "Submission Defence",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Submission Defence",
+        "type": "Technique",
+        "cost": 4,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/33-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 4,
+    "isHorizontal": false,
+    "category": "Grappling",
+    "range": "Ground",
+    "timing": "Response",
+    "actionCost": 2,
+    "staminaCost": 4,
+    "tags": ["RESPONSE"],
+    "rulesText": "Response to a Ground card. Cancel an added debuff from that card. Reduce that card’s damage by 2."
+  },
+  "TECH_FISH_HOOK": {
+    "id": "TECH_FISH_HOOK",
+    "name": "Fish Hook",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Fish Hook",
+        "type": "Technique",
+        "cost": 7,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/34-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 7,
+    "isHorizontal": false,
+    "category": "Grappling",
+    "range": "Ground",
+    "timing": "Main",
+    "actionCost": 3,
+    "staminaCost": 7,
+    "tags": ["DIRTY"],
+    "rulesText": "DIRTY. Deal 2 damage and apply GRIP DAMAGE until the target Passes. GRIP DAMAGE: the target’s Grappling cards cost +1 Base Stamina."
+  },
+  "TECH_PIN_CONTROL": {
+    "id": "TECH_PIN_CONTROL",
+    "name": "Pin Control",
+    "type": "Technique",
+    "face": {
+      "front": {
+        "name": "Pin Control",
+        "type": "Technique",
+        "cost": 5,
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/35-technique.png",
+        "isHorizontal": false
+      }
+    },
+    "cost": 5,
+    "isHorizontal": false,
+    "category": "Grappling",
+    "range": "Ground",
+    "timing": "Main",
+    "actionCost": 2,
+    "staminaCost": 5,
+    "tags": [],
+    "rulesText": "Deal 2 damage and apply PINNED until the target Passes. PINNED: the target’s cards that would move the fight out of Ground cost +1 Action."
+  }
 }
