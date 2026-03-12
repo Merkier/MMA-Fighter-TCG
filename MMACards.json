@@ -26,7 +26,7 @@
         "name": "Leo “Titan” Moreno",
         "type": "Fighter",
         "cost": 0,
-        "image": "https://Merkier.github.io/MMA-Fighter-TCG/Images/cards/placeholder-fighter.jpg",
+        "image": "https://Merkier.github.io/MMA-Fighter-TCG/Images/cards/titan-fighter.jpg",
         "isHorizontal": false
       }
     },
@@ -50,7 +50,7 @@
         "name": "Viktor “Grim” Dragunov",
         "type": "Fighter",
         "cost": 0,
-        "image": "https://Merkier.github.io/MMA-Fighter-TCG/Images/cards/placeholder-fighter.jpg",
+        "image": "https://Merkier.github.io/MMA-Fighter-TCG/Images/cards/grim-fighter.jpg",
         "isHorizontal": false
       }
     },
@@ -74,7 +74,7 @@
         "name": "Maya “Swift Lotus” Chen",
         "type": "Fighter",
         "cost": 0,
-        "image": "https://Merkier.github.io/MMA-Fighter-TCG/Images/cards/placeholder-fighter.jpg",
+        "image": "https://Merkier.github.io/MMA-Fighter-TCG/Images/cards/swift-fighter.jpg",
         "isHorizontal": false
       }
     },
@@ -98,7 +98,7 @@
         "name": "Ava “Nightshade” Kessler",
         "type": "Fighter",
         "cost": 0,
-        "image": "https://Merkier.github.io/MMA-Fighter-TCG/Images/cards/placeholder-fighter.jpg",
+        "image": "https://Merkier.github.io/MMA-Fighter-TCG/Images/cards/nightshade-fighter.jpg",
         "isHorizontal": false
       }
     },
