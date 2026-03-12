@@ -194,7 +194,8 @@
   },
   "defaultRessources": {
     "backgrounds": [
-      "https://merkier.github.io/MMA-Fighter-TCG/Images/playmats/octa-mat.png"
+      "https://merkier.github.io/MMA-Fighter-TCG/Images/playmats/01-mat.png",
+      "https://merkier.github.io/MMA-Fighter-TCG/Images/playmats/02-mat.png"
     ],
     "decksUrl": "https://merkier.github.io/MMA-Fighter-TCG/MMADecks.json"
   },

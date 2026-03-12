@@ -8,7 +8,7 @@
         "name": "Action",
         "type": "Action",
         "cost": 0,
-        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/placeholder-action.png",
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/action.png",
         "isHorizontal": false
       }
     },
