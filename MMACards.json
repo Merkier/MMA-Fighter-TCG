@@ -8,7 +8,7 @@
         "name": "Action",
         "type": "Action",
         "cost": 0,
-        "image": "https://Merkier.github.io/MMA-Fighter-TCG/Images/cards/placeholder-action.png",
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/placeholder-action.png",
         "isHorizontal": false
       }
     },
@@ -26,7 +26,7 @@
         "name": "Leo “Titan” Moreno",
         "type": "Fighter",
         "cost": 0,
-        "image": "https://Merkier.github.io/MMA-Fighter-TCG/Images/cards/titan-fighter.png",
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/titan-fighter.png",
         "isHorizontal": false
       }
     },
@@ -50,7 +50,7 @@
         "name": "Viktor “Grim” Dragunov",
         "type": "Fighter",
         "cost": 0,
-        "image": "https://Merkier.github.io/MMA-Fighter-TCG/Images/cards/grim-fighter.png",
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/grim-fighter.png",
         "isHorizontal": false
       }
     },
@@ -74,7 +74,7 @@
         "name": "Maya “Swift Lotus” Chen",
         "type": "Fighter",
         "cost": 0,
-        "image": "https://Merkier.github.io/MMA-Fighter-TCG/Images/cards/swift-fighter.png",
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/swift-fighter.png",
         "isHorizontal": false
       }
     },
@@ -98,7 +98,7 @@
         "name": "Ava “Nightshade” Kessler",
         "type": "Fighter",
         "cost": 0,
-        "image": "https://Merkier.github.io/MMA-Fighter-TCG/Images/cards/nightshade-fighter.png",
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/nightshade-fighter.png",
         "isHorizontal": false
       }
     },
@@ -122,7 +122,7 @@
         "name": "Jab",
         "type": "Technique",
         "cost": 3,
-        "image": "https://Merkier.github.io/MMA-Fighter-TCG/Images/cards/00-technique.png",
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/00-technique.png",
         "isHorizontal": false
       }
     },
@@ -145,7 +145,7 @@
         "name": "Cross Hook",
         "type": "Technique",
         "cost": 5,
-        "image": "https://Merkier.github.io/MMA-Fighter-TCG/Images/cards/01-technique.png",
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/01-technique.png",
         "isHorizontal": false
       }
     },
@@ -168,7 +168,7 @@
         "name": "Low Kick",
         "type": "Technique",
         "cost": 4,
-        "image": "https://Merkier.github.io/MMA-Fighter-TCG/Images/cards/02-technique.png",
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/02-technique.png",
         "isHorizontal": false
       }
     },
@@ -191,7 +191,7 @@
         "name": "Overhand Right",
         "type": "Technique",
         "cost": 6,
-        "image": "https://Merkier.github.io/MMA-Fighter-TCG/Images/cards/03-technique.png",
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/03-technique.png",
         "isHorizontal": false
       }
     },
@@ -214,7 +214,7 @@
         "name": "Angle Step",
         "type": "Technique",
         "cost": 3,
-        "image": "https://Merkier.github.io/MMA-Fighter-TCG/Images/cards/04-technique.png",
+        "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/cards/04-technique.png",
         "isHorizontal": false
       }
     },
