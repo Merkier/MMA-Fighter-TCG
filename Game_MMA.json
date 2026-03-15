@@ -67,7 +67,6 @@
         "customSections": [
           "Runes",
           "Mana",
-          "Base",
           "Legend"
         ],
         "layout": {
@@ -82,9 +81,6 @@
               "style": {
                 "width": "35%"
               }
-            },
-            {
-              "section": "Base"
             },
             {
               "section": "Legend",
@@ -109,40 +105,6 @@
         },
         "sectionsDict": {
           "Runes": {
-            "title": "Runes",
-            "isHidden": "yes",
-            "height": "SMALL",
-            "alignment": "DECK",
-            "drawPerTurn": 0,
-            "opponentAlignment": false,
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": false,
-            "displayedTitle": "Action Deck",
-            "noQuickActions": false,
-            "enterTapped": false,
-            "enterSpun": false,
-            "isGroupForbidden": false,
-            "keepTappedNewTurn": false,
-            "showHiddenCardInHistory": false,
-            "cardBackColor": "#e0e0e0"
-          },
-          "Base": {
-            "title": "Base",
-            "isHidden": "no",
-            "height": "SMALL",
-            "alignment": "CENTER",
-            "opponentAlignment": false,
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": true,
-            "displayedTitle": "Base",
-            "noQuickActions": false,
-            "enterTapped": true,
-            "enterSpun": false,
-            "isGroupForbidden": false,
-            "keepTappedNewTurn": false,
-            "showHiddenCardInHistory": false
-          },
-          "Legend": {
             "title": "Legend",
             "isHidden": "no",
             "height": "SMALL",
