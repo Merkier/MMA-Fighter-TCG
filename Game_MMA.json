@@ -103,6 +103,9 @@
         "layout": {
           "direction": "row",
           "isSymetricalForOpponents": true,
+          "style": {
+            "justifyContent": "center"
+          },
           "content": [
             {
               "direction": "column",
@@ -116,7 +119,7 @@
               ]
             },
             {
-              "direction": "column",
+              "direction": "row",
               "style": {
                 "width": "28vh"
               },
