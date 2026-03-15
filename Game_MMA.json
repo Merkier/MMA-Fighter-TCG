@@ -123,17 +123,18 @@
               "style": {
                 "width": "28vh"
               },
-              "content": [
-                {
-                  "section": "Action_Pool"
-                },
+              "content": [                
                 {
                   "section": "Action_Deck"
+                },
+                {
+                  "section": "Action_Pool"
                 }
               ]
             }
           ]
         },
+        
         "categoriesAlreadyOnBoard": [
           "Fighter",
           "Action deck->Action_Deck"
