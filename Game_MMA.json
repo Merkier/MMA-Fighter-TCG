@@ -61,26 +61,7 @@
       ],
       "hideFacedDownCards": false,
       "draggableTokens": [
-        {
-          "id": "stun-token",
-          "name": "Stun",
-          "image": "https://lh3.googleusercontent.com/d/1rjBIrmynI-IXisMCBxdB3olsvmBA-QPc"
-        },
-        {
-          "id": "buff-token",
-          "name": "Buff",
-          "image": "https://lh3.googleusercontent.com/d/1FpIll0WPnia4KrMeGjlMLU7AemLn7q_3"
-        },
-        {
-          "id": "temporary-token",
-          "name": "Temporary",
-          "image": "https://lh3.googleusercontent.com/d/1iqukKgbvOYy8-D8WvMzlXf1MFW3M5Oiw"
-        },
-        {
-          "id": "deflect-token",
-          "name": "Deflect",
-          "image": "https://lh3.googleusercontent.com/d/1o7Wjh3eN8nvN0n51iQBlrFqA8X48BpU1"
-        }
+
       ],
       "sections": {
         "customSections": [
@@ -224,11 +205,11 @@
   },
   "defaultRessources": {
     "backgrounds": [
-      "https://russeus.github.io/RB-TCG-Arena/Images/PM_Ahri-1.png",
-      "https://russeus.github.io/RB-TCG-Arena/Images/PM_MF-1.png",
-      "https://russeus.github.io/RB-TCG-Arena/Images/PM_Sett-1.png",
-      "https://russeus.github.io/RB-TCG-Arena/Images/PM_Volibear-1.png",
-      "https://russeus.github.io/RB-TCG-Arena/Images/PM_Yasuo-1.png"
+      "https://merkier.github.io/MMA-Fighter-TCG/Images/PM_Ahri-1.png",
+      "https://merkier.github.io/MMA-Fighter-TCG/Images/PM_MF-1.png",
+      "https://merkier.github.io/MMA-Fighter-TCG/Images/PM_Sett-1.png",
+      "https://merkier.github.io/MMA-Fighter-TCG/Images/PM_Volibear-1.png",
+      "https://merkier.github.io/MMA-Fighter-TCG/Images/PM_Yasuo-1.png"
     ],
     "decksUrl": "https://merkier.github.io/MMA-Fighter-TCG/MMADecks.json"
   },
