@@ -414,26 +414,7 @@
             ],
             "hideFacedDownCards": false,
             "draggableTokens": [
-              {
-                  "id": "stun-token",
-                  "name": "Stun",
-                  "image": "https://merkier.github.io/MMA-Fighter-TCG/1rjBIrmynI-IXisMCBxdB3olsvmBA-QPc"
-              },
-              {
-                  "id": "buff-token",
-                  "name": "Buff",
-                  "image": "https://merkier.github.io/MMA-Fighter-TCG/1FpIll0WPnia4KrMeGjlMLU7AemLn7q_3"
-              },
-              {
-                  "id": "temporary-token",
-                  "name": "Temporary",
-                  "image": "https://merkier.github.io/MMA-Fighter-TCG/1iqukKgbvOYy8-D8WvMzlXf1MFW3M5Oiw"
-              },
-              {
-                  "id": "deflect-token",
-                  "name": "Deflect",
-                  "image": "https://merkier.github.io/MMA-Fighter-TCG/1o7Wjh3eN8nvN0n51iQBlrFqA8X48BpU1"
-              }
+
           ],
             "sections": {
                 "customSections": [
