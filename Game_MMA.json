@@ -315,22 +315,6 @@
                         "keepTappedNewTurn": false,
                         "showHiddenCardInHistory": false
                     },
-                    "Chosen_Champion": {
-                        "title": "Chosen_Champion",
-                        "isHidden": "no",
-                        "height": "SMALL",
-                        "alignment": "CENTER",
-                        "opponentAlignment": false,
-                        "noAutoPayTo": true,
-                        "isHorizontalAllowed": true,
-                        "displayedTitle": "Chosen Champion",
-                        "noQuickActions": true,
-                        "enterTapped": false,
-                        "enterSpun": false,
-                        "isGroupForbidden": false,
-                        "keepTappedNewTurn": false,
-                        "showHiddenCardInHistory": false
-                    },
                     "Legend": {
                         "title": "Legend",
                         "isHidden": "no",
