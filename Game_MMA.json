@@ -1,201 +1,6 @@
 {
-  "name": "MMA Fighter Card Game",
-  "menuBackgroundImage": "https://merkier.github.io/MMA-Fighter-TCG/Images/menu-bg.png",
-  "deckBuilding": {
-    "mainFilters": [
-      "type",
-      "category",
-      "range",
-      "timing",
-      "actionCost",
-      "staminaCost",
-      "tags"
-    ],
-    "formats": [
-      {
-        "title": "Standard",
-        "gameplay": "Classic",
-        "customCategories": [
-          "Fighter",
-          "Action deck"
-        ]
-      }
-    ]
-  },
-  "gameplay": {
-    "Classic": {
-      "mulligan": {
-        "info": "Optional mulligan: once only. Draw a new hand of 5, then keep.",
-        "startingHandSize": 5,
-        "drawNewHand": true
-      },
-      "newTurn": {
-        "drawOnStart": false,
-        "sharedTurn": true,
-        "firstPlayerTokenName": "Priority",
-        "drawPerTurn": 0
-      },
-      "defaultNotes": "Stamina counter = your current Stamina (start 30).\nWhenever you gain PRIORITY:\n• Restore ceil(10% of current Stamina)\n• Draw 1 Technique card\n• Move up to 3 Action cards from Action Deck → Action Pool\n\nAction Pool: spend Action cards to pay Action costs. Spent Action cards go to the bottom of your Action Deck.\nAll triggers/effects are handled manually by players.",
-      "tokens": [
-        {
-          "name": "Priority",
-          "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/tokens/priority.png",
-          "isUnique": true,
-          "leavesAtEndOfTurn": false
-        }
-      ],
-      "countersStartingValues": [
-        30
-      ],
-      "draggableTokens": [
-        {
-          "id": "Range_Stand",
-          "name": "Range: Stand",
-          "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/tokens/range-stand.png"
-        },
-        {
-          "id": "Range_Clinch",
-          "name": "Range: Clinch",
-          "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/tokens/range-clinch.png"
-        },
-        {
-          "id": "Range_Ground",
-          "name": "Range: Ground",
-          "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/tokens/range-ground.png"
-        },
-        {
-          "id": "Debuff_Blurred",
-          "name": "Blurred Vision",
-          "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/tokens/debuff-blurred.png"
-        },
-        {
-          "id": "Debuff_Limp",
-          "name": "Limp",
-          "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/tokens/debuff-limp.png"
-        },
-        {
-          "id": "Debuff_CutBrow",
-          "name": "Cut Brow",
-          "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/tokens/debuff-cutbrow.png"
-        },
-        {
-          "id": "Debuff_GripDamage",
-          "name": "Grip Damage",
-          "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/tokens/debuff-grip.png"
-        },
-        {
-          "id": "Debuff_Pinned",
-          "name": "Pinned",
-          "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/tokens/debuff-pinned.png"
-        },
-        {
-          "id": "Debuff_Choked",
-          "name": "Choked",
-          "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/tokens/debuff-choked.png"
-        }
-      ],
-      "sections": {
-        "customSections": [
-          "Fighter",
-          "Action_Pool",
-          "Action_Deck"
-        ],
-        "layout": {
-          "direction": "row",
-          "isSymetricalForOpponents": true,
-          "style": {
-            "justifyContent": "center"
-          },
-          "content": [
-            {
-              "direction": "column",
-              "style": {
-                "width": "18vh"
-              },
-              "content": [
-                {
-                  "section": "Fighter"
-                }
-              ]
-            },
-            {
-              "direction": "row",
-              "style": {
-                "width": "28vh"
-              },
-              "content": [                
-                {
-                  "section": "Action_Deck"
-                },
-                {
-                  "section": "Action_Pool"
-                }
-              ]
-            }
-          ]
-        },
-        
-        "categoriesAlreadyOnBoard": [
-          "Fighter",
-          "Action deck->Action_Deck"
-        ],
-        "autoPlayFromHand": {
-          "Technique": "Stack",
-          "Fighter": "Fighter",
-          "Action": "Action_Pool"
-        },
-        "autoPlayFromStack": {
-          "Technique": "Discard"
-        },
-        "sectionsDict": {
-          "Stack": {
-            "isDefaultSection": true,
-            "title": "Exchange",
-            "isHidden": "no",
-            "height": "HUGE",
-            "alignment": "NONE",
-            "isHorizontalAllowed": false,
-            "isGroupForbidden": true,
-            "displayedTitle": "Exchange"
-          },
-          "Fighter": {
-            "title": "Fighter",
-            "isHidden": "no",
-            "height": "DEFAULT",
-            "alignment": "CENTER",
-            "isHorizontalAllowed": true,
-            "noQuickActions": true,
-            "displayedTitle": "Fighter"
-          },
-          "Action_Pool": {
-            "title": "Action_Pool",
-            "isHidden": "no",
-            "height": "SMALL",
-            "alignment": "START",
-            "opponentAlignment": "END",
-            "isHorizontalAllowed": true,
-            "displayedTitle": "Action Pool",
-            "noQuickActions": false,
-            "cardActionShortcut": {
-              "action": "MOVE",
-              "actionData": {
-                "destination": "Action_Deck"
-              },
-              "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/icons/spend-action.png"
-            }
-          },
-          "Action_Deck": {
-            "title": "Action_Deck",
-            "isHidden": "yes",
-            "height": "SMALL",
-            "alignment": "DECK",
-            "isHorizontalAllowed": false,
-            "displayedTitle": "Action Deck"
-          }
-        }
-      }
-    }
-  },
+  "name": "Riftbound watch",
+  "menuBackgroundImage": "https://merkier.github.io/MMA-Fighter-TCG//Images/Banner.png",
   "defaultRessources": {
     "backgrounds": [
       "https://merkier.github.io/MMA-Fighter-TCG/Images/playmats/01-mat.png",
@@ -203,14 +8,798 @@
     ],
     "decksUrl": "https://merkier.github.io/MMA-Fighter-TCG/MMADecks.json"
   },
-  "customHelp": "Manual-play MMA card game.\n\nPRIORITY FLOW (no automation):\n• When you gain PRIORITY: restore ceil(10% of current Stamina), draw 1 Technique, then move up to 3 Action cards from Action Deck → Action Pool.\n• Actions: spend Action cards from Action Pool to pay Action costs; move them into Action Deck (recycle).\n• Range: use draggable tokens (Stand/Clinch/Ground) to track the current range.\n• Debuffs: use draggable tokens (Blurred, Limp, Cut Brow, Grip Damage, Pinned, Choked).\n\nHOW TO PLAY A CARD:\n1) Click a Technique in hand to move it to the Exchange (Stack).\n2) Opponent responds by playing a Response (or passing).\n3) Resolve manually, then click Technique cards in the Exchange to send them to Discard.\n\nTIP: The Action Pool section has a quick shortcut icon that moves a selected Action card to Action Deck (spend).",
+  "customHelp": "(1) To Recycle a card, hold Shift while dragging the card to its deck.\n(2) You can create Tokens and Buffs with right click on the source card.\n(3) You can mark buffed units and Damage/Might mods with 'C + click' and 'Ctrl + C + click'. Otherwise, you can Group (attach) a Buff card to another with the right-click menu.\n(4) To play a Hidden card, use Z + click on a card on your hand and then move it to the Battlefield. Then do the same to reveal it.\n(5) You can mark your points at the bottom left.",
+  "cardRotation": "90",
   "cards": {
     "dataUrl": "https://merkier.github.io/MMA-Fighter-TCG/MMACards.json",
     "cardBack": "https://merkier.github.io/MMA-Fighter-TCG/Images/card-backs/technique-back.png",
     "cardBackColor": "#202020",
     "extraCardBacks": {
-      "Fighter": "https://merkier.github.io/MMA-Fighter-TCG/Images/card-backs/fighter-back.png",
-      "Action": "https://merkier.github.io/MMA-Fighter-TCG/Images/card-backs/action-back.png"
+        "Runes": "https://merkier.github.io/MMA-Fighter-TCG/Images/card-backs/runes-back.png",
+        "Battlefields": "https://merkier.github.io/MMA-Fighter-TCG/Images/card-backs/battlefields-back.png",
+        "Legend": "https://merkier.github.io/MMA-Fighter-TCG/Images/card-backs/legend-back.png"
+      }
+  },
+  "deckBuilding": {
+    "mainFilters": [
+      "type",
+      "cost",
+      "name",
+      "Domain",
+      "Set"
+    ],
+    "formats": [
+      {
+        "title": "Classic",
+        "gameplay": "Classic",
+        "customCategories": [
+          "Chosen_Champion"
+        ]
+      },
+      {
+        "title": "Multiplayer",
+        "gameplay": "Multiplayer",
+        "customCategories": [
+          "Chosen_Champion"
+        ]
+      }
+    ]
+  },
+  "gameplay": {
+    "Classic": {
+            "mulligan": {
+                "info": "Choose up to 2 cards to Recycle, then manually draw that many.",
+                "startingHandSize": 4,
+                "drawNewHand": false,
+                "putSelectionAtBottom": true,
+                "drawNewSelectedCards": false,
+                "triggeredByButton": true,
+                "_NO_SHUFFLE": true
+            },
+            "newTurn": {
+                "drawOnStart": false,
+                "sharedTurn": false,
+                "firstPlayerTokenName": "",
+                "drawPerTurn": "1"
+            },
+            "defaultNotes": "",
+            "tokens": [],
+            "countersStartingValues": [
+                0
+            ],
+            "hideFacedDownCards": false,
+            "draggableTokens": [
+              {
+                  "id": "stun-token",
+                  "name": "Stun",
+                  "image": "https://lh3.googleusercontent.com/d/1rjBIrmynI-IXisMCBxdB3olsvmBA-QPc"
+              },
+              {
+                  "id": "buff-token",
+                  "name": "Buff",
+                  "image": "https://lh3.googleusercontent.com/d/1FpIll0WPnia4KrMeGjlMLU7AemLn7q_3"
+              },
+              {
+                  "id": "temporary-token",
+                  "name": "Temporary",
+                  "image": "https://lh3.googleusercontent.com/d/1iqukKgbvOYy8-D8WvMzlXf1MFW3M5Oiw"
+              },
+              {
+                  "id": "deflect-token",
+                  "name": "Deflect",
+                  "image": "https://lh3.googleusercontent.com/d/1o7Wjh3eN8nvN0n51iQBlrFqA8X48BpU1"
+              }
+          ],
+            "sections": {
+                "customSections": [
+                    "Runes",
+                    "Mana",
+                    "Base",
+                    "B1",
+                    "Battlefields",
+                    "myBF2",
+                    "B2",
+                    "Chosen_Champion",
+                    "Legend"
+                ],
+                "layout": {
+                    "direction": "column",
+                    "isSymetricalForOpponents": false,
+                    "content": [
+                        {
+                            "direction": "row",
+                            "style": false,
+                            "content": [
+                                {
+                                    "direction": "column",
+                                    "style": { "height": "24.25vh", "margin": "0.25vh" },
+                                    "content": [
+                                        {
+                                            "section": "Battlefields",
+                                            "style": {
+                                                "width": "30vh",
+                                                "height": "12vh",
+                                                "scale": "0.68",
+                                                "position": "absolute",
+                                                "top": "0",
+                                                "left": "50%",
+                                                "translate": "-50% -3.25vh"
+                                            }
+                                        },
+                                        {
+                                            "section": "B1",
+                                            "style": {
+                                                "borderRadius": "1vh",
+                                                "marginTop": "auto"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "direction": "column",
+                                    "style": { "height": "24.25vh", "margin": "0.25vh" },
+                                    "content": [
+                                        {
+                                            "section": "myBF2",
+                                            "style": {
+                                                "width": "30vh",
+                                                "height": "12vh",
+                                                "scale": "0.68",
+                                                "position": "absolute",
+                                                "top": "0",
+                                                "left": "50%",
+                                                "translate": "-50% -3.25vh"
+                                            }
+                                        },
+                                        {
+                                            "section": "B2",
+                                            "style": {
+                                                "borderRadius": "1vh",
+                                                "marginTop": "auto"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ],
+                            "isSymetricalForOpponents": false
+                        },
+                        {
+                            "direction": "row",
+                            "style": false,
+                            "content": [
+                                {
+                                    "section": "Runes"
+                                },
+                                {
+                                    "section": "Mana",
+                                    "style": {
+                                        "width": "35%"
+                                    }
+                                },
+                                {
+                                    "section": "wq"
+                                },
+                                {
+                                    "section": "Legend",
+                                    "style": {
+                                        "width": "10.2vh"
+                                    }
+                                },
+                                {
+                                    "section": "Chosen_Champion",
+                                    "style": {
+                                        "width": "10.2vh"
+                                    }
+                                }
+                            ],
+                            "isSymetricalForOpponents": false
+                        }
+                    ]
+                },
+                "categoriesAlreadyOnBoard": [
+                    "Runes",
+                    "Battlefields",
+                    "Legend",
+                    "Chosen_Champion"
+                ],
+                "autoPlayFromHand": {
+                    "Runes": "Mana",
+                    "Gear": "Base",
+                    "Spell": "Stack"
+                },
+                "autoPlayFromStack": {
+                    "Spell": "Discard"
+                },
+                "sectionsDict": {
+                    "Runes": {
+                        "title": "Runes",
+                        "isHidden": "yes",
+                        "height": "SMALL",
+                        "alignment": "DECK",
+                        "drawPerTurn": 2,
+                        "opponentAlignment": false,
+                        "noAutoPayTo": true,
+                        "isHorizontalAllowed": false,
+                        "displayedTitle": "Runes Deck",
+                        "noQuickActions": false,
+                        "enterTapped": false,
+                        "enterSpun": false,
+                        "isGroupForbidden": false,
+                        "keepTappedNewTurn": false,
+                        "showHiddenCardInHistory": false,
+                        "cardBackColor": "#e0e0e0"
+                    },
+                    "Base": {
+                        "title": "Base",
+                        "isHidden": "no",
+                        "height": "SMALL",
+                        "alignment": "CENTER",
+                        "opponentAlignment": false,
+                        "noAutoPayTo": true,
+                        "isHorizontalAllowed": true,
+                        "displayedTitle": "Base",
+                        "noQuickActions": false,
+                        "enterTapped": true,
+                        "enterSpun": false,
+                        "isGroupForbidden": false,
+                        "keepTappedNewTurn": false,
+                        "showHiddenCardInHistory": false
+                    },
+                    "Battlefields": {
+                        "title": "Battlefields",
+                        "isHidden": "opponent-only",
+                        "height": "12",
+                        "alignment": "CENTER",
+                        "opponentAlignment": false,
+                        "noAutoPayTo": true,
+                        "isHorizontalAllowed": true,
+                        "displayedTitle": "Chosen Battlefield",
+                        "noQuickActions": true,
+                        "enterTapped": false,
+                        "enterSpun": false,
+                        "isGroupForbidden": false,
+                        "keepTappedNewTurn": false,
+                        "showHiddenCardInHistory": false,
+                        "cardStyle": {
+                            "marginTop": "-2vh"
+                        }
+                    },
+                    "myBF2": {
+                        "title": "myBF2",
+                        "isHidden": "no",
+                        "height": "12",
+                        "alignment": "CENTER",
+                        "opponentAlignment": false,
+                        "noAutoPayTo": true,
+                        "isHorizontalAllowed": true,
+                        "displayedTitle": "Opponent Battlefield",
+                        "noQuickActions": true,
+                        "enterTapped": false,
+                        "enterSpun": false,
+                        "isGroupForbidden": false,
+                        "keepTappedNewTurn": false,
+                        "showHiddenCardInHistory": false,
+                        "cardStyle": {
+                            "marginTop": "-2vh"
+                        }
+                    },
+                    "B1": {
+                        "title": "B1",
+                        "isHidden": "no",
+                        "height": "16",
+                        "alignment": "CENTER",
+                        "opponentAlignment": false,
+                        "noAutoPayTo": true,
+                        "isHorizontalAllowed": true,
+                        "displayedTitle": "BF Units 1",
+                        "noQuickActions": false,
+                        "enterTapped": true,
+                        "enterSpun": false,
+                        "isGroupForbidden": false,
+                        "keepTappedNewTurn": false,
+                        "showHiddenCardInHistory": false
+                    },
+                    "B2": {
+                        "title": "B2",
+                        "isHidden": "no",
+                        "height": "16",
+                        "alignment": "CENTER",
+                        "opponentAlignment": false,
+                        "noAutoPayTo": true,
+                        "isHorizontalAllowed": true,
+                        "displayedTitle": "BF Units 2",
+                        "noQuickActions": false,
+                        "enterTapped": true,
+                        "enterSpun": false,
+                        "isGroupForbidden": false,
+                        "keepTappedNewTurn": false,
+                        "showHiddenCardInHistory": false
+                    },
+                    "Chosen_Champion": {
+                        "title": "Chosen_Champion",
+                        "isHidden": "no",
+                        "height": "SMALL",
+                        "alignment": "CENTER",
+                        "opponentAlignment": false,
+                        "noAutoPayTo": true,
+                        "isHorizontalAllowed": true,
+                        "displayedTitle": "Chosen Champion",
+                        "noQuickActions": true,
+                        "enterTapped": false,
+                        "enterSpun": false,
+                        "isGroupForbidden": false,
+                        "keepTappedNewTurn": false,
+                        "showHiddenCardInHistory": false
+                    },
+                    "Legend": {
+                        "title": "Legend",
+                        "isHidden": "no",
+                        "height": "SMALL",
+                        "alignment": "CENTER",
+                        "opponentAlignment": false,
+                        "noAutoPayTo": true,
+                        "isHorizontalAllowed": true,
+                        "displayedTitle": "Legend",
+                        "noQuickActions": true,
+                        "enterTapped": false,
+                        "enterSpun": false,
+                        "isGroupForbidden": false,
+                        "keepTappedNewTurn": false,
+                        "showHiddenCardInHistory": false
+                    },
+                    "Mana": {
+                        "title": "Mana",
+                        "isHidden": "no",
+                        "height": "SMALL",
+                        "alignment": "CENTER",
+                        "opponentAlignment": false,
+                        "noAutoPayTo": true,
+                        "isHorizontalAllowed": true,
+                        "displayedTitle": "Runes",
+                        "noQuickActions": false,
+                        "enterTapped": false,
+                        "enterSpun": false,
+                        "isGroupForbidden": false,
+                        "keepTappedNewTurn": false,
+                        "showHiddenCardInHistory": false,
+                        "cardActionShortcut": {
+                            "action": "MOVE",
+                            "actionData": {
+                                "destination": "Runes",
+                                "position": "BOTTOM"
+                            },
+                            "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/recycleButton.png"
+                        }
+                    },
+                    "Stack": {
+                        "isDefaultSection": true,
+                        "title": "Stack",
+                        "isHidden": "no",
+                        "height": "HUGE",
+                        "alignment": "NONE",
+                        "isHorizontalAllowed": false,
+                        "isGroupForbidden": true,
+                        "displayedTitle": "Pile",
+                        "opponentAlignment": false,
+                        "noAutoPayTo": true,
+                        "noQuickActions": false,
+                        "enterTapped": false,
+                        "enterSpun": false,
+                        "keepTappedNewTurn": false,
+                        "showHiddenCardInHistory": false
+                    }
+                }
+            }
+    },
+    "Multiplayer": {
+            "mulligan": {
+                "info": "Choose up to 2 cards to Recycle, then manually draw that many.",
+                "startingHandSize": 4,
+                "drawNewHand": false,
+                "putSelectionAtBottom": true,
+                "drawNewSelectedCards": false,
+                "triggeredByButton": true,
+                "_NO_SHUFFLE": true
+            },
+            "newTurn": {
+                "drawOnStart": false,
+                "sharedTurn": false,
+                "firstPlayerTokenName": "",
+                "drawPerTurn": "1"
+            },
+            "defaultNotes": "",
+            "tokens": [],
+            "countersStartingValues": [
+                0
+            ],
+            "hideFacedDownCards": false,
+            "draggableTokens": [
+              {
+                  "id": "stun-token",
+                  "name": "Stun",
+                  "image": "https://lh3.googleusercontent.com/d/1rjBIrmynI-IXisMCBxdB3olsvmBA-QPc"
+              },
+              {
+                  "id": "buff-token",
+                  "name": "Buff",
+                  "image": "https://lh3.googleusercontent.com/d/1FpIll0WPnia4KrMeGjlMLU7AemLn7q_3"
+              },
+              {
+                  "id": "temporary-token",
+                  "name": "Temporary",
+                  "image": "https://lh3.googleusercontent.com/d/1iqukKgbvOYy8-D8WvMzlXf1MFW3M5Oiw"
+              },
+              {
+                  "id": "deflect-token",
+                  "name": "Deflect",
+                  "image": "https://lh3.googleusercontent.com/d/1o7Wjh3eN8nvN0n51iQBlrFqA8X48BpU1"
+              }
+          ],
+            "sections": {
+                "customSections": [
+                    "Runes",
+                    "Mana",
+                    "Base",
+                    "B1",
+                    "Battlefields",
+                    "myBF2",
+                    "myBF3",
+                    "B2",
+                    "B3",
+                    "Chosen_Champion",
+                    "Legend"
+                ],
+                "layout": {
+                    "direction": "column",
+                    "isSymetricalForOpponents": false,
+                    "content": [
+                        {
+                            "direction": "row",
+                            "style": false,
+                            "content": [
+                                {
+                                    "direction": "column",
+                                    "style": { "height": "24.25vh", "margin": "0.25vh" },
+                                    "content": [
+                                        {
+                                            "section": "Battlefields",
+                                            "style": {
+                                                "width": "30vh",
+                                                "height": "12vh",
+                                                "scale": "0.68",
+                                                "position": "absolute",
+                                                "top": "0",
+                                                "left": "50%",
+                                                "translate": "-50% -3.25vh"
+                                            }
+                                        },
+                                        {
+                                            "section": "B1",
+                                            "style": {
+                                                "background": "linear-gradient(0deg, rgba(170, 85, 85, 0) 0%, rgba(170, 85, 85, 0.6) 90%)",
+                                                "borderRadius": "1vh",
+                                                "marginTop": "auto"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "direction": "column",
+                                    "style": { "height": "24.25vh", "margin": "0.25vh" },
+                                    "content": [
+                                        {
+                                            "section": "myBF2",
+                                            "style": {
+                                                "width": "30vh",
+                                                "height": "12vh",
+                                                "scale": "0.68",
+                                                "position": "absolute",
+                                                "top": "0",
+                                                "left": "50%",
+                                                "translate": "-50% -3.25vh"
+                                            }
+                                        },
+                                        {
+                                            "section": "B2",
+                                            "style": {
+                                                "background": "linear-gradient(0deg, rgba(85, 170, 85, 0) 0%, rgba(85, 170, 85, 0.6) 90%)",
+                                                "borderRadius": "1vh",
+                                                "marginTop": "auto"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "direction": "column",
+                                    "style": { "height": "24.25vh", "margin": "0.25vh" },
+                                    "content": [
+                                        {
+                                            "section": "myBF3",
+                                            "style": {
+                                                "width": "30vh",
+                                                "height": "12vh",
+                                                "scale": "0.68",
+                                                "position": "absolute",
+                                                "top": "0",
+                                                "left": "50%",
+                                                "translate": "-50% -3.25vh"
+                                            }
+                                        },
+                                        {
+                                            "section": "B3",
+                                            "style": {
+                                                "background": "linear-gradient(0deg, rgba(85, 85, 170, 0) 0%, rgba(85, 85, 170, 0.6) 90%)",
+                                                "borderRadius": "1vh",
+                                                "marginTop": "auto"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ],
+                            "isSymetricalForOpponents": true
+                        },
+                        {
+                            "direction": "row",
+                            "style": false,
+                            "content": [
+                                {
+                                    "section": "Runes"
+                                },
+                                {
+                                    "section": "Mana",
+                                    "style": {
+                                        "width": "35%"
+                                    }
+                                },
+                                {
+                                    "section": "Base"
+                                },
+                                {
+                                    "section": "Legend",
+                                    "style": {
+                                        "width": "10.2vh"
+                                    }
+                                },
+                                {
+                                    "section": "Chosen_Champion",
+                                    "style": {
+                                        "width": "10.2vh"
+                                    }
+                                }
+                            ],
+                            "isSymetricalForOpponents": false
+                        }
+                    ]
+                },
+                "categoriesAlreadyOnBoard": [
+                    "Runes",
+                    "Battlefields",
+                    "Legend",
+                    "Chosen_Champion"
+                ],
+                "autoPlayFromHand": {
+                    "Runes": "Mana",
+                    "Gear": "Base",
+                    "Spell": "Stack"
+                },
+                "autoPlayFromStack": {
+                    "Spell": "Discard"
+                },
+                "sectionsDict": {
+                    "Runes": {
+                        "title": "Runes",
+                        "isHidden": "yes",
+                        "height": "SMALL",
+                        "alignment": "DECK",
+                        "drawPerTurn": 2,
+                        "opponentAlignment": false,
+                        "noAutoPayTo": true,
+                        "isHorizontalAllowed": false,
+                        "displayedTitle": "Runes Deck",
+                        "noQuickActions": false,
+                        "enterTapped": false,
+                        "enterSpun": false,
+                        "isGroupForbidden": false,
+                        "keepTappedNewTurn": false,
+                        "showHiddenCardInHistory": false,
+                        "cardBackColor": "#e0e0e0"
+                    },
+                    "Base": {
+                        "title": "Base",
+                        "isHidden": "no",
+                        "height": "SMALL",
+                        "alignment": "CENTER",
+                        "opponentAlignment": false,
+                        "noAutoPayTo": true,
+                        "isHorizontalAllowed": true,
+                        "displayedTitle": "Base",
+                        "noQuickActions": false,
+                        "enterTapped": true,
+                        "enterSpun": false,
+                        "isGroupForbidden": false,
+                        "keepTappedNewTurn": false,
+                        "showHiddenCardInHistory": false
+                    },
+                    "Battlefields": {
+                        "title": "Battlefields",
+                        "isHidden": "opponent-only",
+                        "height": "12",
+                        "alignment": "CENTER",
+                        "opponentAlignment": false,
+                        "noAutoPayTo": true,
+                        "isHorizontalAllowed": true,
+                        "displayedTitle": "Chosen Battlefield",
+                        "noQuickActions": true,
+                        "enterTapped": false,
+                        "enterSpun": false,
+                        "isGroupForbidden": false,
+                        "keepTappedNewTurn": false,
+                        "showHiddenCardInHistory": false,
+                        "cardStyle": {
+                            "marginTop": "-2vh"
+                        }
+                    },
+                    "myBF2": {
+                        "title": "myBF2",
+                        "isHidden": "no",
+                        "height": "12",
+                        "alignment": "CENTER",
+                        "opponentAlignment": false,
+                        "noAutoPayTo": true,
+                        "isHorizontalAllowed": true,
+                        "displayedTitle": "Opponent Battlefield",
+                        "noQuickActions": true,
+                        "enterTapped": false,
+                        "enterSpun": false,
+                        "isGroupForbidden": false,
+                        "keepTappedNewTurn": false,
+                        "showHiddenCardInHistory": false,
+                        "cardStyle": {
+                            "marginTop": "-2vh"
+                        }
+                    },
+                    "myBF3": {
+                        "title": "myBF3",
+                        "isHidden": "no",
+                        "height": "12.5",
+                        "alignment": "CENTER",
+                        "opponentAlignment": false,
+                        "noAutoPayTo": true,
+                        "isHorizontalAllowed": true,
+                        "displayedTitle": "Opponent Battlefield",
+                        "noQuickActions": true,
+                        "enterTapped": false,
+                        "enterSpun": false,
+                        "isGroupForbidden": false,
+                        "keepTappedNewTurn": false,
+                        "showHiddenCardInHistory": false,
+                        "cardStyle": {
+                            "marginTop": "-2vh"
+                        }
+                    },
+                    "B1": {
+                        "title": "B1",
+                        "isHidden": "no",
+                        "height": "16",
+                        "alignment": "CENTER",
+                        "opponentAlignment": false,
+                        "noAutoPayTo": true,
+                        "isHorizontalAllowed": true,
+                        "displayedTitle": "BF Units 1",
+                        "noQuickActions": false,
+                        "enterTapped": true,
+                        "enterSpun": false,
+                        "isGroupForbidden": false,
+                        "keepTappedNewTurn": false,
+                        "showHiddenCardInHistory": false
+                    },
+                    "B2": {
+                        "title": "B2",
+                        "isHidden": "no",
+                        "height": "16",
+                        "alignment": "CENTER",
+                        "opponentAlignment": false,
+                        "noAutoPayTo": true,
+                        "isHorizontalAllowed": true,
+                        "displayedTitle": "BF Units 2",
+                        "noQuickActions": false,
+                        "enterTapped": true,
+                        "enterSpun": false,
+                        "isGroupForbidden": false,
+                        "keepTappedNewTurn": false,
+                        "showHiddenCardInHistory": false
+                    },
+                    "B3": {
+                        "title": "B3",
+                        "isHidden": "no",
+                        "height": "16",
+                        "alignment": "CENTER",
+                        "opponentAlignment": false,
+                        "noAutoPayTo": true,
+                        "isHorizontalAllowed": true,
+                        "displayedTitle": "BF Units 3",
+                        "noQuickActions": false,
+                        "enterTapped": true,
+                        "enterSpun": false,
+                        "isGroupForbidden": false,
+                        "keepTappedNewTurn": false,
+                        "showHiddenCardInHistory": false
+                    },
+                    "Chosen_Champion": {
+                        "title": "Chosen_Champion",
+                        "isHidden": "no",
+                        "height": "SMALL",
+                        "alignment": "CENTER",
+                        "opponentAlignment": false,
+                        "noAutoPayTo": true,
+                        "isHorizontalAllowed": true,
+                        "displayedTitle": "Chosen Champion",
+                        "noQuickActions": true,
+                        "enterTapped": false,
+                        "enterSpun": false,
+                        "isGroupForbidden": false,
+                        "keepTappedNewTurn": false,
+                        "showHiddenCardInHistory": false
+                    },
+                    "Legend": {
+                        "title": "Legend",
+                        "isHidden": "no",
+                        "height": "SMALL",
+                        "alignment": "CENTER",
+                        "opponentAlignment": false,
+                        "noAutoPayTo": true,
+                        "isHorizontalAllowed": true,
+                        "displayedTitle": "Legend",
+                        "noQuickActions": true,
+                        "enterTapped": false,
+                        "enterSpun": false,
+                        "isGroupForbidden": false,
+                        "keepTappedNewTurn": false,
+                        "showHiddenCardInHistory": false
+                    },
+                    "Mana": {
+                        "title": "Mana",
+                        "isHidden": "no",
+                        "height": "SMALL",
+                        "alignment": "CENTER",
+                        "opponentAlignment": false,
+                        "noAutoPayTo": true,
+                        "isHorizontalAllowed": true,
+                        "displayedTitle": "Runes",
+                        "noQuickActions": false,
+                        "enterTapped": false,
+                        "enterSpun": false,
+                        "isGroupForbidden": false,
+                        "keepTappedNewTurn": false,
+                        "showHiddenCardInHistory": false,
+                        "cardActionShortcut": {
+                            "action": "MOVE",
+                            "actionData": {
+                                "destination": "Runes",
+                                "position": "BOTTOM"
+                            },
+                            "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/recycleButton.png"
+                        }
+                    },
+                    "Stack": {
+                        "isDefaultSection": true,
+                        "title": "Stack",
+                        "isHidden": "no",
+                        "height": "HUGE",
+                        "alignment": "NONE",
+                        "isHorizontalAllowed": false,
+                        "isGroupForbidden": true,
+                        "displayedTitle": "Pile",
+                        "opponentAlignment": false,
+                        "noAutoPayTo": true,
+                        "noQuickActions": false,
+                        "enterTapped": false,
+                        "enterSpun": false,
+                        "keepTappedNewTurn": false,
+                        "showHiddenCardInHistory": false
+                    }
+                }
+            }
     }
   }
 }
