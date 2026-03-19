@@ -1,19 +1,19 @@
 {
   "name": "Riftbound watch",
-  "menuBackgroundImage": "https://merkier.github.io/MMA-Fighter-TCG//Images/Banner.png",
+  "menuBackgroundImage": "https://merkier.github.io/MMA-Fighter-TCG/Images/backgrounds/01-background.png",
   "defaultRessources": {
     "backgrounds": [
       "https://merkier.github.io/MMA-Fighter-TCG/Images/playmats/01-mat.png",
       "https://merkier.github.io/MMA-Fighter-TCG/Images/playmats/02-mat.png"
     ],
-    "decksUrl": "https://merkier.github.io/MMA-Fighter-TCG/MMADecks.json"
+    "decksUrl": "https://merkier.github.io/MMA-Fighter-TCG/Decks/Riftbound-Decks.json"
   },
   "customHelp": "(1) To Recycle a card, hold Shift while dragging the card to its deck.\n(2) You can create Tokens and Buffs with right click on the source card.\n(3) You can mark buffed units and Damage/Might mods with 'C + click' and 'Ctrl + C + click'. Otherwise, you can Group (attach) a Buff card to another with the right-click menu.\n(4) To play a Hidden card, use Z + click on a card on your hand and then move it to the Battlefield. Then do the same to reveal it.\n(5) You can mark your points at the bottom left.",
   "cardRotation": "90",
   "cards": {
-    "dataUrl": "https://merkier.github.io/MMA-Fighter-TCG/MMACards.json",
+    "dataUrl": "https://merkier.github.io/MMA-Fighter-TCG/Cards/Riftbound-CardList.json",
     "cardBack": "https://merkier.github.io/MMA-Fighter-TCG/Images/card-backs/technique-back.png",
-    "cardBackColor": "#202020",
+    "cardBackColor": "#03354a",
     "extraCardBacks": {
         "Runes": "https://merkier.github.io/MMA-Fighter-TCG/Images/card-backs/runes-back.png",
         "Battlefields": "https://merkier.github.io/MMA-Fighter-TCG/Images/card-backs/battlefields-back.png",
@@ -67,27 +67,27 @@
             "countersStartingValues": [
                 0
             ],
-            "hideFacedDownCards": false,
+            "hideFacedDownCards": false,                
             "draggableTokens": [
               {
                   "id": "stun-token",
-                  "name": "Stun",
-                  "image": "https://merkier.github.io/MMA-Fighter-TCG/1rjBIrmynI-IXisMCBxdB3olsvmBA-QPc"
+                  "name": "Stun",   
+                  "image": "https://lh3.googleusercontent.com/d/1rjBIrmynI-IXisMCBxdB3olsvmBA-QPc"
               },
               {
                   "id": "buff-token",
                   "name": "Buff",
-                  "image": "https://merkier.github.io/MMA-Fighter-TCG/1FpIll0WPnia4KrMeGjlMLU7AemLn7q_3"
+                  "image": "https://lh3.googleusercontent.com/d/1FpIll0WPnia4KrMeGjlMLU7AemLn7q_3"
               },
               {
                   "id": "temporary-token",
                   "name": "Temporary",
-                  "image": "https://merkier.github.io/MMA-Fighter-TCG/1iqukKgbvOYy8-D8WvMzlXf1MFW3M5Oiw"
+                  "image": "https://lh3.googleusercontent.com/d/1iqukKgbvOYy8-D8WvMzlXf1MFW3M5Oiw"
               },
               {
                   "id": "deflect-token",
                   "name": "Deflect",
-                  "image": "https://merkier.github.io/MMA-Fighter-TCG/1o7Wjh3eN8nvN0n51iQBlrFqA8X48BpU1"
+                  "image": "https://lh3.googleusercontent.com/d/1o7Wjh3eN8nvN0n51iQBlrFqA8X48BpU1"
               }
           ],
             "sections": {
@@ -315,6 +315,22 @@
                         "keepTappedNewTurn": false,
                         "showHiddenCardInHistory": false
                     },
+                    "Chosen_Champion": {
+                        "title": "Chosen_Champion",
+                        "isHidden": "no",
+                        "height": "SMALL",
+                        "alignment": "CENTER",
+                        "opponentAlignment": false,
+                        "noAutoPayTo": true,
+                        "isHorizontalAllowed": true,
+                        "displayedTitle": "Chosen Champion",
+                        "noQuickActions": true,
+                        "enterTapped": false,
+                        "enterSpun": false,
+                        "isGroupForbidden": false,
+                        "keepTappedNewTurn": false,
+                        "showHiddenCardInHistory": false
+                    },
                     "Legend": {
                         "title": "Legend",
                         "isHidden": "no",
@@ -398,7 +414,26 @@
             ],
             "hideFacedDownCards": false,
             "draggableTokens": [
-
+              {
+                  "id": "stun-token",
+                  "name": "Stun",
+                  "image": "https://lh3.googleusercontent.com/d/1rjBIrmynI-IXisMCBxdB3olsvmBA-QPc"
+              },
+              {
+                  "id": "buff-token",
+                  "name": "Buff",
+                  "image": "https://lh3.googleusercontent.com/d/1FpIll0WPnia4KrMeGjlMLU7AemLn7q_3"
+              },
+              {
+                  "id": "temporary-token",
+                  "name": "Temporary",
+                  "image": "https://lh3.googleusercontent.com/d/1iqukKgbvOYy8-D8WvMzlXf1MFW3M5Oiw"
+              },
+              {
+                  "id": "deflect-token",
+                  "name": "Deflect",
+                  "image": "https://lh3.googleusercontent.com/d/1o7Wjh3eN8nvN0n51iQBlrFqA8X48BpU1"
+              }
           ],
             "sections": {
                 "customSections": [
