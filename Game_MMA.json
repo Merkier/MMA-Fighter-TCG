@@ -98,7 +98,10 @@
         "customSections": [
           "Fighter",
           "Action_Pool",
-          "Action_Deck"
+          "Action_Deck",
+          "Range_Striking",
+          "Range_Clinch",
+          "Range_Ground"
         ],
         "layout": {
           "direction": "row",
@@ -115,6 +118,15 @@
               "content": [
                 {
                   "section": "Fighter"
+                },
+                {
+                  "section": "Range_Striking"
+                },
+                {
+                  "section": "Range_Clinch"
+                },
+                {
+                  "section": "Range_Ground"
                 }
               ]
             },
