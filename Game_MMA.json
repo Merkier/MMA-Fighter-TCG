@@ -16,6 +16,7 @@
         "title": "Standard",
         "gameplay": "Classic",
         "customCategories": [
+          "Fighter",
           "Action_Pool",
           "Action_Deck",
           "Range_Striking",
@@ -70,35 +71,11 @@
           "id": "Debuff_Blurred",
           "name": "Blurred Vision",
           "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/tokens/debuff-blurred.png"
-        },
-        {
-          "id": "Debuff_Limp",
-          "name": "Limp",
-          "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/tokens/debuff-limp.png"
-        },
-        {
-          "id": "Debuff_CutBrow",
-          "name": "Cut Brow",
-          "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/tokens/debuff-cutbrow.png"
-        },
-        {
-          "id": "Debuff_GripDamage",
-          "name": "Grip Damage",
-          "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/tokens/debuff-grip.png"
-        },
-        {
-          "id": "Debuff_Pinned",
-          "name": "Pinned",
-          "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/tokens/debuff-pinned.png"
-        },
-        {
-          "id": "Debuff_Choked",
-          "name": "Choked",
-          "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/tokens/debuff-choked.png"
         }
       ],
       "sections": {
         "customSections": [
+          "Fighter",
           "Action_Pool",
           "Action_Deck",
           "Range_Striking",
@@ -115,11 +92,11 @@
             {
               "direction": "row",
               "style": {
-                "width": "50%"
+                "width": "60%"
               },
               "content": [
                 {
-                  "section": "Range_Striking"
+                  "section": "Fighter"
                 },
                 {
                   "section": "Range_Clinch"
@@ -132,7 +109,7 @@
             {
               "direction": "row",
               "style": {
-                "width": "28vh"
+                "width": "40%"
               },
               "content": [                
                 {
@@ -147,12 +124,12 @@
         },
         
         "categoriesAlreadyOnBoard": [
-          "Range_Striking",
+          "Fighter",
           "Action deck->Action_Deck"
         ],
         "autoPlayFromHand": {
           "Technique": "Stack",
-          "Fighter": "Range_Striking",
+          "Fighter": "Fighter",
           "Action": "Action_Pool"
         },
         "autoPlayFromStack": {
@@ -168,6 +145,15 @@
             "isHorizontalAllowed": false,
             "isGroupForbidden": true,
             "displayedTitle": "Exchange"
+          },
+            "Fighter": {
+            "title": "Fighter",
+            "isHidden": "no",
+            "height": "DEFAULT",
+            "alignment": "CENTER",
+            "isHorizontalAllowed": true,
+            "noQuickActions": true,
+            "displayedTitle": "Fighter"
           },
           "Range_Striking": {
             "title": "Range_Striking",
