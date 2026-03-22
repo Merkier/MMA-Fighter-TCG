@@ -108,14 +108,14 @@
           "Range_Ground"
         ],
         "layout": {
-          "direction": "row",
+          "direction": "column",
           "isSymetricalForOpponents": true,
           "style": {
             "justifyContent": "center"
           },
           "content": [
             {
-              "direction": "column",
+              "direction": "row",
               "style": {
                 "width": "18vh"
               },
