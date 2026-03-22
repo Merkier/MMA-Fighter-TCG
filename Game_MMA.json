@@ -115,7 +115,7 @@
             {
               "direction": "row",
               "style": {
-                "width": "auto"
+                "width": "50%"
               },
               "content": [
                 {
@@ -147,7 +147,7 @@
         },
         
         "categoriesAlreadyOnBoard": [
-          "Fighter",
+          "Range_Striking",
           "Action deck->Action_Deck"
         ],
         "autoPlayFromHand": {
@@ -168,15 +168,6 @@
             "isHorizontalAllowed": false,
             "isGroupForbidden": true,
             "displayedTitle": "Exchange"
-          },
-          "Fighter": {
-            "title": "Fighter",
-            "isHidden": "no",
-            "height": "DEFAULT",
-            "alignment": "CENTER",
-            "isHorizontalAllowed": true,
-            "noQuickActions": true,
-            "displayedTitle": "Fighter"
           },
           "Range_Striking": {
             "title": "Range_Striking",
