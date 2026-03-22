@@ -179,6 +179,33 @@
             "noQuickActions": true,
             "displayedTitle": "Fighter"
           },
+          "Range_Striking": {
+            "title": "Range_Striking",
+            "isHidden": "no",
+            "height": "DEFAULT",
+            "alignment": "CENTER",
+            "isHorizontalAllowed": true,
+            "noQuickActions": true,
+            "displayedTitle": "Range: Striking"
+          },
+          "Range_Clinch": {
+            "title": "Range_Clinch",
+            "isHidden": "no",
+            "height": "DEFAULT",
+            "alignment": "CENTER",
+            "isHorizontalAllowed": true,
+            "noQuickActions": true,
+            "displayedTitle": "Range: Clinch"
+          },
+          "Range_Ground": {
+            "title": "Range_Ground",
+            "isHidden": "no",
+            "height": "DEFAULT",
+            "alignment": "CENTER",
+            "isHorizontalAllowed": true,
+            "noQuickActions": true,
+            "displayedTitle": "Range: Ground"
+          },
           "Action_Pool": {
             "title": "Action_Pool",
             "isHidden": "no",
