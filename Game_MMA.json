@@ -17,7 +17,11 @@
         "gameplay": "Classic",
         "customCategories": [
           "Fighter",
-          "Action deck"
+          "Action_Pool",
+          "Action_Deck",
+          "Range_Striking",
+          "Range_Clinch",
+          "Range_Ground"
         ]
       }
     ]
