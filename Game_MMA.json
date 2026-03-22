@@ -16,7 +16,6 @@
         "title": "Standard",
         "gameplay": "Classic",
         "customCategories": [
-          "Fighter",
           "Action_Pool",
           "Action_Deck",
           "Range_Striking",
@@ -100,7 +99,6 @@
       ],
       "sections": {
         "customSections": [
-          "Fighter",
           "Action_Pool",
           "Action_Deck",
           "Range_Striking",
@@ -111,18 +109,15 @@
           "direction": "column",
           "isSymetricalForOpponents": true,
           "style": {
-            "justifyContent": "center"
+            "justifyContent": "start"
           },
           "content": [
             {
               "direction": "row",
               "style": {
-                "width": "18vh"
+                "width": "auto"
               },
               "content": [
-                {
-                  "section": "Fighter"
-                },
                 {
                   "section": "Range_Striking"
                 },
@@ -157,7 +152,7 @@
         ],
         "autoPlayFromHand": {
           "Technique": "Stack",
-          "Fighter": "Fighter",
+          "Fighter": "Range_Striking",
           "Action": "Action_Pool"
         },
         "autoPlayFromStack": {
