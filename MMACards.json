@@ -17,7 +17,20 @@
     "category": "Resource",
     "rulesText": "Represents 1 Action. Spend Action cards to pay Action costs; move spent Action cards to your Action Deck (recycle)."
   },
-
+  "CTRL_REMOVE_TOP": {
+  "id": "CTRL_REMOVE_TOP",
+  "name": "Remove Top",
+  "type": "Action",
+  "face": {
+    "front": {
+      "name": "Remove Top",
+      "type": "Action",
+      "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/icons/top.png"
+    }
+  },
+  "rulesText": "Remove the top card of Action Deck.",
+  "cardActions": "<Card Actions>\nMove 1 from deck to Action_Trash\n</Card Actions>"
+},
   "FTR_LEO_TITAN": {
     "id": "FTR_LEO_TITAN",
     "name": "Leo “Titan” Moreno",

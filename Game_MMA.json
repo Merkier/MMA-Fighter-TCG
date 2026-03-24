@@ -104,20 +104,15 @@
                 }
               ]
             },
-            {
-              "direction": "row",
-              "style": {
-                "width": "40%"
-              },
-              "content": [                
-                {
-                  "section": "Action_Deck"
-                },
-                {
-                  "section": "Action_Pool"
-                }
-              ]
-            }
+{
+  "direction": "row",
+  "style": { "width": "40%" },
+  "content": [
+    { "section": "Action_Deck" },
+    { "section": "Action_Pool" },
+    { "section": "Action_Control" }
+  ]
+}
           ]
         },
         
@@ -133,70 +128,94 @@
         "autoPlayFromStack": {
           "Technique": "Discard"
         },
-        "sectionsDict": {
-          "Stack": {
-            "isDefaultSection": true,
-            "title": "Exchange",
-            "isHidden": "no",
-            "height": "HUGE",
-            "alignment": "NONE",
-            "isHorizontalAllowed": false,
-            "isGroupForbidden": true,
-            "displayedTitle": "Exchange"
-          },
-            "Fighter": {
-            "title": "Fighter",
-            "isHidden": "no",
-            "height": "DEFAULT",
-            "alignment": "CENTER",
-            "isHorizontalAllowed": true,
-            "noQuickActions": true,
-            "displayedTitle": "Fighter"
-          },
-          "Range_Clinch": {
-            "title": "Range_Clinch",
-            "isHidden": "no",
-            "height": "DEFAULT",
-            "alignment": "CENTER",
-            "isHorizontalAllowed": true,
-            "noQuickActions": true,
-            "displayedTitle": "Range: Clinch"
-          },
-          "Range_Ground": {
-            "title": "Range_Ground",
-            "isHidden": "no",
-            "height": "DEFAULT",
-            "alignment": "CENTER",
-            "isHorizontalAllowed": true,
-            "noQuickActions": true,
-            "displayedTitle": "Range: Ground"
-          },
-          "Action_Pool": {
-            "title": "Action_Pool",
-            "isHidden": "no",
-            "height": "SMALL",
-            "alignment": "START",
-            "opponentAlignment": "END",
-            "isHorizontalAllowed": true,
-            "displayedTitle": "Action Pool",
-            "noQuickActions": false,
-            "cardActionShortcut": {
-              "action": "MOVE",
-              "actionData": {
-                "destination": "Action_Deck"
-              },
-              "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/icons/spend-action.png"
-            }
-          },
-          "Action_Deck": {
-            "title": "Action_Deck",
-            "isHidden": "yes",
-            "height": "SMALL",
-            "alignment": "DECK",
-            "isHorizontalAllowed": false,
-            "displayedTitle": "Action Deck"
-          }
-        }
+"sectionsDict": {
+  "Stack": {
+    "isDefaultSection": true,
+    "title": "Exchange",
+    "isHidden": "no",
+    "height": "HUGE",
+    "alignment": "NONE",
+    "isHorizontalAllowed": false,
+    "isGroupForbidden": true,
+    "displayedTitle": "Exchange"
+  },
+
+  "Fighter": {
+    "title": "Fighter",
+    "isHidden": "no",
+    "height": "DEFAULT",
+    "alignment": "CENTER",
+    "isHorizontalAllowed": true,
+    "noQuickActions": true,
+    "displayedTitle": "Range: Strike"
+  },
+
+  "Range_Clinch": {
+    "title": "Range_Clinch",
+    "isHidden": "no",
+    "height": "DEFAULT",
+    "alignment": "CENTER",
+    "isHorizontalAllowed": true,
+    "noQuickActions": true,
+    "displayedTitle": "Range: Clinch"
+  },
+
+  "Range_Ground": {
+    "title": "Range_Ground",
+    "isHidden": "no",
+    "height": "DEFAULT",
+    "alignment": "CENTER",
+    "isHorizontalAllowed": true,
+    "noQuickActions": true,
+    "displayedTitle": "Range: Ground"
+  },
+
+  "Action_Deck": {
+    "title": "Action_Deck",
+    "isHidden": "no",
+    "height": "SMALL",
+    "alignment": "DECK",
+    "isHorizontalAllowed": false,
+    "displayedTitle": "Action Deck"
+  },
+
+  "Action_Pool": {
+    "title": "Action_Pool",
+    "isHidden": "no",
+    "height": "SMALL",
+    "alignment": "START",
+    "opponentAlignment": "END",
+    "isHorizontalAllowed": true,
+    "displayedTitle": "Action Pool",
+
+    "cardActionShortcut": {
+      "action": "MOVE",
+      "actionData": {
+        "destination": "Action_Deck"
+      },
+      "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/icons/spend-action.png"
+    }
+  },
+
+  "Action_Control": {
+    "title": "Action_Control",
+    "isHidden": "no",
+    "height": "SMALL",
+    "alignment": "CENTER",
+    "isHorizontalAllowed": true,
+    "displayedTitle": "Controls",
+    "noQuickActions": true
+  },
+
+  "Action_Trash": {
+    "title": "Action_Trash",
+    "isHidden": "yes",
+    "height": "SMALL",
+    "alignment": "NONE",
+    "isHorizontalAllowed": false,
+    "displayedTitle": "Removed"
+  }
+}
       }
     }
   },
