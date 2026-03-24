@@ -27,26 +27,23 @@
   },
   "gameplay": {
     "Classic": {
-      "mulligan": {
-        "info": "Optional mulligan: once only. Draw a new hand of 5, then keep.",
-        "startingHandSize": 5,
-        "drawNewHand": true
-      },
-      "newTurn": {
-        "drawOnStart": false,
-        "sharedTurn": true,
-        "firstPlayerTokenName": "Priority",
-        "drawPerTurn": 0
-      },
-      "defaultNotes": "Stamina counter = your current Stamina (start 30).\nWhenever you gain PRIORITY:\n• Restore ceil(10% of current Stamina)\n• Draw 1 Technique card\n• Move up to 3 Action cards from Action Deck → Action Pool\n\nAction Pool: spend Action cards to pay Action costs. Spent Action cards go to the bottom of your Action Deck.\nAll triggers/effects are handled manually by players.",
-      "tokens": [
-        {
-          "name": "Priority",
-          "image": "https://merkier.github.io/MMA-Fighter-TCG/Images/tokens/priority.png",
-          "isUnique": true,
-          "leavesAtEndOfTurn": false
-        }
-      ],
+      "mulligan": {                
+                "info": "Choose up to 2 cards to Recycle, then manually draw that many.",
+                "startingHandSize": 4,
+                "drawNewHand": false,
+                "putSelectionAtBottom": true,
+                "drawNewSelectedCards": false,
+                "triggeredByButton": true,
+                "_NO_SHUFFLE": true
+            },
+            "newTurn": {
+                "drawOnStart": false,
+                "sharedTurn": false,
+                "firstPlayerTokenName": "",
+                "drawPerTurn": "1"
+            },
+            "defaultNotes": "",
+            "tokens": [],
       "countersStartingValues": [
         30
       ],
@@ -136,8 +133,7 @@
     "alignment": "NONE",
     "isHorizontalAllowed": false,
     "isGroupForbidden": true,
-    "displayedTitle": "Exchange",
-       "drawPerTurn": 2
+    "displayedTitle": "Exchange"
   },
 
   "Fighter": {
