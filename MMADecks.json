@@ -1,12 +1,12 @@
 [
   {
     "title": "Leo “Titan” Moreno — Starter",
-    "id": "starter_titan",
+    "id": "starter_titan_v2",
     "game": "MMA Fighter Card Game",
     "format": "Standard",
     "cardCount": 43,
-    "createdAt": "2026-03-12T00:00:00.000Z",
-    "lastModifiedAt": "2026-03-12T00:00:00.000Z",
+    "createdAt": "2026-03-24T00:00:00.000Z",
+    "lastModifiedAt": "2026-03-24T00:00:00.000Z",
     "deckList": {
       "categoriesOrder": [
         "Fighter",
@@ -26,35 +26,89 @@
         }
       ],
       "Technique": [
-        { "count": 2, "id": "TECH_JAB" },
-        { "count": 2, "id": "TECH_CROSS_HOOK" },
-        { "count": 2, "id": "TECH_LOW_KICK" },
-        { "count": 2, "id": "TECH_OVERHAND_RIGHT" },
-        { "count": 2, "id": "TECH_ANGLE_STEP" },
-        { "count": 2, "id": "TECH_GUARD_BLOCK" },
-        { "count": 2, "id": "TECH_SLIP_COUNTER" },
-        { "count": 1, "id": "TECH_SPRAWL" },
-        { "count": 1, "id": "TECH_FOOTWORK_ESCAPE" },
-        { "count": 2, "id": "TECH_FLYING_KNEE" },
-        { "count": 1, "id": "TECH_EYE_POKE" },
-        { "count": 2, "id": "TECH_HOOK_TO_CLINCH" },
-        { "count": 2, "id": "TECH_CLINCH_GRAB" },
-        { "count": 2, "id": "TECH_DIRTY_BOXING" },
-        { "count": 1, "id": "TECH_BREAK_CLINCH" },
-        { "count": 1, "id": "TECH_DOUBLE_LEG" },
-        { "count": 1, "id": "TECH_STAND_UP" },
-        { "count": 2, "id": "TECH_GROUND_AND_POUND" }
+        {
+          "count": 2,
+          "id": "TECH_JAB"
+        },
+        {
+          "count": 2,
+          "id": "TECH_RUS"
+        },
+        {
+          "count": 2,
+          "id": "TECH_CRO"
+        },
+        {
+          "count": 2,
+          "id": "TECH_FLU"
+        },
+        {
+          "count": 2,
+          "id": "TECH_FEI"
+        },
+        {
+          "count": 2,
+          "id": "TECH_SWS"
+        },
+        {
+          "count": 2,
+          "id": "TECH_PET"
+        },
+        {
+          "count": 1,
+          "id": "TECH_HEK"
+        },
+        {
+          "count": 2,
+          "id": "TECH_BOS"
+        },
+        {
+          "count": 2,
+          "id": "TECH_COV"
+        },
+        {
+          "count": 2,
+          "id": "TECH_EVA"
+        },
+        {
+          "count": 2,
+          "id": "TECH_SQU"
+        },
+        {
+          "count": 2,
+          "id": "TECH_DIS"
+        },
+        {
+          "count": 1,
+          "id": "TECH_TMT"
+        },
+        {
+          "count": 1,
+          "id": "TECH_CST"
+        },
+        {
+          "count": 1,
+          "id": "TECH_MOS"
+        },
+        {
+          "count": 1,
+          "id": "TECH_GOH"
+        },
+        {
+          "count": 1,
+          "id": "TECH_HAR"
+        }
       ]
     }
   },
   {
     "title": "Viktor “Grim” Dragunov — Starter",
-    "id": "starter_grim",
+    "id": "starter_grim_v2",
     "game": "MMA Fighter Card Game",
     "format": "Standard",
     "cardCount": 43,
-    "createdAt": "2026-03-12T00:00:00.000Z",
-    "lastModifiedAt": "2026-03-12T00:00:00.000Z",
+    "createdAt": "2026-03-24T00:00:00.000Z",
+    "lastModifiedAt": "2026-03-24T00:00:00.000Z",
     "deckList": {
       "categoriesOrder": [
         "Fighter",
@@ -74,36 +128,89 @@
         }
       ],
       "Technique": [
-        { "count": 2, "id": "TECH_CLINCH_GRAB" },
-        { "count": 2, "id": "TECH_DIRTY_BOXING" },
-        { "count": 2, "id": "TECH_KNEE_STRIKE" },
-        { "count": 2, "id": "TECH_CAGE_PRESSURE" },
-        { "count": 2, "id": "TECH_TRIP_TAKEDOWN" },
-        { "count": 2, "id": "TECH_BREAK_CLINCH" },
-        { "count": 2, "id": "TECH_FRAME_DEFENCE" },
-        { "count": 2, "id": "TECH_UNDERHOOK_CONTROL" },
-        { "count": 2, "id": "TECH_CAGE_TURN" },
-        { "count": 2, "id": "TECH_PUMMEL_POSITION" },
-        { "count": 2, "id": "TECH_ELBOW_SLICE" },
-        { "count": 2, "id": "TECH_BODY_LOCK_SLAM" },
-        { "count": 1, "id": "TECH_JAB" },
-        { "count": 1, "id": "TECH_OVERHAND_RIGHT" },
-        { "count": 1, "id": "TECH_DOUBLE_LEG" },
-        { "count": 2, "id": "TECH_GROUND_AND_POUND" },
-        { "count": 1, "id": "TECH_MAT_RETURN" },
-        { "count": 1, "id": "TECH_STAND_UP" },
-        { "count": 1, "id": "TECH_PIN_CONTROL" }
+        {
+          "count": 2,
+          "id": "TECH_SUR"
+        },
+        {
+          "count": 2,
+          "id": "TECH_CLB"
+        },
+        {
+          "count": 2,
+          "id": "TECH_DIB"
+        },
+        {
+          "count": 2,
+          "id": "TECH_KNS"
+        },
+        {
+          "count": 2,
+          "id": "TECH_OFB"
+        },
+        {
+          "count": 2,
+          "id": "TECH_FRC"
+        },
+        {
+          "count": 2,
+          "id": "TECH_TIU"
+        },
+        {
+          "count": 2,
+          "id": "TECH_JAB"
+        },
+        {
+          "count": 2,
+          "id": "TECH_RUS"
+        },
+        {
+          "count": 2,
+          "id": "TECH_GOH"
+        },
+        {
+          "count": 2,
+          "id": "TECH_STU"
+        },
+        {
+          "count": 2,
+          "id": "TECH_DIS"
+        },
+        {
+          "count": 1,
+          "id": "TECH_GAP"
+        },
+        {
+          "count": 1,
+          "id": "TECH_GRC"
+        },
+        {
+          "count": 1,
+          "id": "TECH_CWI"
+        },
+        {
+          "count": 1,
+          "id": "TECH_EXO"
+        },
+        {
+          "count": 1,
+          "id": "TECH_MOS"
+        },
+        {
+          "count": 1,
+          "id": "TECH_HAR"
+        }
       ]
     }
   },
   {
     "title": "Maya “Swift Lotus” Chen — Starter",
-    "id": "starter_lotus",
+    "id": "starter_lotus_v2",
     "game": "MMA Fighter Card Game",
     "format": "Standard",
     "cardCount": 43,
-    "createdAt": "2026-03-12T00:00:00.000Z",
-    "lastModifiedAt": "2026-03-12T00:00:00.000Z",
+    "createdAt": "2026-03-24T00:00:00.000Z",
+    "lastModifiedAt": "2026-03-24T00:00:00.000Z",
     "deckList": {
       "categoriesOrder": [
         "Fighter",
@@ -123,38 +230,89 @@
         }
       ],
       "Technique": [
-        { "count": 2, "id": "TECH_JAB" },
-        { "count": 2, "id": "TECH_CROSS_HOOK" },
-        { "count": 2, "id": "TECH_ANGLE_STEP" },
-        { "count": 2, "id": "TECH_SLIP_COUNTER" },
-        { "count": 1, "id": "TECH_GUARD_BLOCK" },
-        { "count": 1, "id": "TECH_FOOTWORK_ESCAPE" },
-        { "count": 1, "id": "TECH_LOW_KICK" },
-        { "count": 2, "id": "TECH_CLINCH_GRAB" },
-        { "count": 2, "id": "TECH_BREAK_CLINCH" },
-        { "count": 2, "id": "TECH_PUMMEL_POSITION" },
-        { "count": 1, "id": "TECH_FRAME_DEFENCE" },
-        { "count": 1, "id": "TECH_TRIP_TAKEDOWN" },
-        { "count": 2, "id": "TECH_DOUBLE_LEG" },
-        { "count": 2, "id": "TECH_GUARD_RECOVERY" },
-        { "count": 2, "id": "TECH_PASS_GUARD" },
-        { "count": 2, "id": "TECH_HIP_ESCAPE" },
-        { "count": 2, "id": "TECH_STAND_UP" },
-        { "count": 1, "id": "TECH_ARMBAR_ATTEMPT" },
-        { "count": 1, "id": "TECH_GROUND_AND_POUND" },
-        { "count": 1, "id": "TECH_SUBMISSION_DEFENCE" },
-        { "count": 1, "id": "TECH_MAT_RETURN" }
+        {
+          "count": 2,
+          "id": "TECH_JAB"
+        },
+        {
+          "count": 2,
+          "id": "TECH_CRO"
+        },
+        {
+          "count": 2,
+          "id": "TECH_FEI"
+        },
+        {
+          "count": 2,
+          "id": "TECH_SLC"
+        },
+        {
+          "count": 2,
+          "id": "TECH_SQU"
+        },
+        {
+          "count": 2,
+          "id": "TECH_GOH"
+        },
+        {
+          "count": 2,
+          "id": "TECH_MOS"
+        },
+        {
+          "count": 2,
+          "id": "TECH_SUR"
+        },
+        {
+          "count": 2,
+          "id": "TECH_OFB"
+        },
+        {
+          "count": 2,
+          "id": "TECH_FRC"
+        },
+        {
+          "count": 2,
+          "id": "TECH_GRC"
+        },
+        {
+          "count": 2,
+          "id": "TECH_GUP"
+        },
+        {
+          "count": 1,
+          "id": "TECH_SWP"
+        },
+        {
+          "count": 1,
+          "id": "TECH_DEG"
+        },
+        {
+          "count": 1,
+          "id": "TECH_SBA"
+        },
+        {
+          "count": 1,
+          "id": "TECH_CWI"
+        },
+        {
+          "count": 1,
+          "id": "TECH_RTF"
+        },
+        {
+          "count": 1,
+          "id": "TECH_COM"
+        }
       ]
     }
   },
   {
     "title": "Ava “Nightshade” Kessler — Starter",
-    "id": "starter_nightshade",
+    "id": "starter_nightshade_v2",
     "game": "MMA Fighter Card Game",
     "format": "Standard",
     "cardCount": 43,
-    "createdAt": "2026-03-12T00:00:00.000Z",
-    "lastModifiedAt": "2026-03-12T00:00:00.000Z",
+    "createdAt": "2026-03-24T00:00:00.000Z",
+    "lastModifiedAt": "2026-03-24T00:00:00.000Z",
     "deckList": {
       "categoriesOrder": [
         "Fighter",
@@ -174,24 +332,78 @@
         }
       ],
       "Technique": [
-        { "count": 2, "id": "TECH_DOUBLE_LEG" },
-        { "count": 2, "id": "TECH_GROUND_AND_POUND" },
-        { "count": 2, "id": "TECH_GUARD_RECOVERY" },
-        { "count": 2, "id": "TECH_ARMBAR_ATTEMPT" },
-        { "count": 2, "id": "TECH_REAR_NAKED_CHOKE" },
-        { "count": 2, "id": "TECH_STAND_UP" },
-        { "count": 2, "id": "TECH_PASS_GUARD" },
-        { "count": 2, "id": "TECH_MAT_RETURN" },
-        { "count": 2, "id": "TECH_HIP_ESCAPE" },
-        { "count": 2, "id": "TECH_SUBMISSION_DEFENCE" },
-        { "count": 2, "id": "TECH_FISH_HOOK" },
-        { "count": 2, "id": "TECH_PIN_CONTROL" },
-        { "count": 2, "id": "TECH_CLINCH_GRAB" },
-        { "count": 2, "id": "TECH_TRIP_TAKEDOWN" },
-        { "count": 1, "id": "TECH_CAGE_PRESSURE" },
-        { "count": 1, "id": "TECH_BREAK_CLINCH" },
-        { "count": 1, "id": "TECH_LOW_KICK" },
-        { "count": 1, "id": "TECH_EYE_POKE" }
+        {
+          "count": 2,
+          "id": "TECH_GAP"
+        },
+        {
+          "count": 2,
+          "id": "TECH_GUP"
+        },
+        {
+          "count": 2,
+          "id": "TECH_SBA"
+        },
+        {
+          "count": 2,
+          "id": "TECH_SWP"
+        },
+        {
+          "count": 2,
+          "id": "TECH_DEG"
+        },
+        {
+          "count": 1,
+          "id": "TECH_GRC"
+        },
+        {
+          "count": 2,
+          "id": "TECH_SUR"
+        },
+        {
+          "count": 2,
+          "id": "TECH_CLB"
+        },
+        {
+          "count": 2,
+          "id": "TECH_TIU"
+        },
+        {
+          "count": 2,
+          "id": "TECH_OFB"
+        },
+        {
+          "count": 2,
+          "id": "TECH_STU"
+        },
+        {
+          "count": 2,
+          "id": "TECH_CWI"
+        },
+        {
+          "count": 2,
+          "id": "TECH_ADS"
+        },
+        {
+          "count": 1,
+          "id": "TECH_SEW"
+        },
+        {
+          "count": 1,
+          "id": "TECH_FIQ"
+        },
+        {
+          "count": 1,
+          "id": "TECH_MOS"
+        },
+        {
+          "count": 1,
+          "id": "TECH_COM"
+        },
+        {
+          "count": 1,
+          "id": "TECH_HAR"
+        }
       ]
     }
   }
