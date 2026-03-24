@@ -29,7 +29,7 @@
     "Classic": {
       "mulligan": {                
                 "info": "Choose up to 2 cards to Recycle, then manually draw that many.",
-                "startingHandSize": 4,
+                "startingHandSize": 5,
                 "drawNewHand": false,
                 "putSelectionAtBottom": true,
                 "drawNewSelectedCards": false,
@@ -173,7 +173,8 @@
     "alignment": "DECK",
     "isHorizontalAllowed": false,
     "displayedTitle": "Action Deck",
-       "drawPerTurn": 2
+       "drawPerTurn": 2,
+       "noQuickActions": false
   },
 
   "Action_Pool": {
@@ -182,7 +183,7 @@
     "height": "SMALL",
     "alignment": "START",
     "opponentAlignment": "END",
-    "isHorizontalAllowed": true,
+    "isHorizontalAllowed": false,
     "displayedTitle": "Action Pool",
 
     "cardActionShortcut": {
