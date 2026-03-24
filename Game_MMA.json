@@ -173,8 +173,15 @@
     "alignment": "DECK",
     "isHorizontalAllowed": false,
     "displayedTitle": "Action Deck",
-       "drawPerTurn": 2,
-       "noQuickActions": false
+    "drawPerTurn": 2,
+    "cardActionShortcut": {
+    "action": "MOVE",
+    "actionData": {
+    "destination": "Discard",
+    "position": "BOTTOM"
+    },
+    "image": "https://russeus.github.io/RB-TCG-Arena/Images/recycleButton.png"
+}
   },
 
   "Action_Pool": {
